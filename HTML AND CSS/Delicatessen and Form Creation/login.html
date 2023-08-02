@@ -1,12 +1,16 @@
 <!--Create a form with multiple fields that accept user input.
 Add two separate sets of radio buttons or checkboxes.
 Search how to add a placeholder (hint hint) to an input field. A placeholder shows up when the field has no value, it disappears after the user types or selects something in the field -->
+
+<!--For those who wuld want to run this, my screen is bad, so i chose random colors to aid viewing efficiency for me, to which it might look odd for a different user. Would definitely be fixed soon -->
+
 <!--They would need to have an account to continue-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Welcome to Delicatessen</title>
 </head>
 <body>
@@ -14,7 +18,7 @@ Search how to add a placeholder (hint hint) to an input field. A placeholder sho
     <form action="./forms.html" method="POST">
         <h1>Welcome!</h1>
         <section class="login">
-            <h1>Login to Order</h1>
+            <h3>Login to Order</h3>
             <label for="username">Username: </label>
             <input type="text" id="username" name="username" placeholder="Enter Username" required minlength="6" maxlength="20">
 
@@ -34,6 +38,12 @@ Search how to add a placeholder (hint hint) to an input field. A placeholder sho
 
     </form>
 
-    <p><strong><a href="signup.html">Sign Up</a></strong></p>
+    <br>
+
+    <p> New Here? <strong><a href="signup.html">Create an Account</a></strong></p>
+    
+    <footer>
+        <h5 class="dev-class" id="dev-id">Designed by Isaac-Victor Providence</h5>
+    </footer>
 </body>
 </html>    

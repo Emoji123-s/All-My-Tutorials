@@ -1,0 +1,28 @@
+*{
+    font: serif;
+}
+body{
+    background-image:url('images/black-panther.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+[href]{
+    color: gold;
+}
+
+[href]:hover{
+    color: yellowgreen;
+}
+.dev-class{
+    color: blue;
+}
+
+#dev-id{
+    color: firebrick;
+    position: fixed;
+    bottom: 0;
+    right: 25px;
+}
