@@ -1,8 +1,7 @@
-#include <stdio.h>
+/*#include <stdio.h>
+#include "main.h"
 
-int main(void)
+int add(int a, int b)
 {
-    printf("Hello World\n");
-    printf("Wonderful!!\n");
-    return (0);
-}
+    return (a + b);
+}*/
