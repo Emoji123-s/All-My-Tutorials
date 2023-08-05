@@ -60,6 +60,6 @@ int main(void)
 
     } while (choice == 'Y' || choice == 'y');
         
-    printf("Thank you for using the program :)\n");
+    printf("Thanks! Come again!! :)\n");
     return (0);
 }
