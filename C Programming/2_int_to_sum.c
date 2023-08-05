@@ -45,7 +45,7 @@ int main(void)
     
         printf("Welcome to your personal Adder\n");
 
-        printf("Enter the first value: \n");
+        printf("Enter the first value: \n"); //The numbers can be put in the same place, i just decided to do it this way :)
         scanf("%d", &num1);
 
         printf("Enter the second number: \n");
