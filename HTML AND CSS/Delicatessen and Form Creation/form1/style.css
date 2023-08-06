@@ -1,5 +1,8 @@
 *{
     font: serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     background-image:url('images/black-panther.jpg');
@@ -7,7 +10,19 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
 }
+
+.login{
+    width: 420px;
+    color: white;
+    background-color: black;
+}
+
+.rememberme
 
 [href]{
     color: gold;
@@ -15,6 +30,7 @@ body{
 
 [href]:hover{
     color: yellowgreen;
+    text-decoration: underline;
 }
 .dev-class{
     color: blue;
