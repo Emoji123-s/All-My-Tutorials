@@ -15,5 +15,4 @@ int main(void)
 
     return (0);
 }
-
-//Really thought it was going to be harder than this
+//Still needs work because if the user inputs something like 63, it'll only print the ascii value of 6.
