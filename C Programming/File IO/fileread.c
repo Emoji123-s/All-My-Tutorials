@@ -32,7 +32,7 @@ void main()
     */
 
     /*For String
-    We use the fgets() function
+    We use the fgets() function. Specify the array size, if not, it'll not run. Let the amount of characters to be printed be lower than the specified array size
     char str[50];
     fgets(str, 5, fp);
     printf("%s", str);
