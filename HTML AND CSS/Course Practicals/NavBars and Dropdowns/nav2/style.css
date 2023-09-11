@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    background-image: url("../nav2/atrocitus.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 9%;
+    padding: 10px 10px;
+    backdrop-filter: blur(20px);
+    background: transparent;
+}
+
+.container nav h1{
+    font-size: 25px;
+    color: white;
+    font-family: cursive;
+}
+
+span{
+    color: crimson;
+    font-family: cursive;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+}
+
+nav ul li:hover{
+    color: black;
+    transition: .3s;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+button{
+    padding: 15px 25px;
+    border-radius: 15px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    background: crimson;
+}
+
+button:hover{
+    background: transparent;
+    transition: .3s ease-in-out;
+    transform: scale(1.2);
+    color: white;
+}
