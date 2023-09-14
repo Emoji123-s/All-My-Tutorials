@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(-45deg, #35577D, #141E30);
+}
+
+h1{
+
+    font-size: 35px;
+    font-family: Georgia;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding-top: 100px;
+    padding-right: 200px;
+}
+
+h2{
+    color: gray;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-right: 200px;
+    font-weight: 100;
+    font-family: Georgia;
+}
