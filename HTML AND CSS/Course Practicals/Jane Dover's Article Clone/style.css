@@ -1,7 +1,12 @@
+
 body{
     background: linear-gradient(-45deg, #35577D, #141E30);
     margin: 0;
     padding: 0;
+}
+
+.article{
+    padding: 40px;
 }
 
 h1{
@@ -12,17 +17,13 @@ h1{
     text-align: center;
     width: 100%;
     padding-top: 100px;
-    padding-right: 200px;
 }
 
 h2{
     color: gray;
-    font-size: 25px;
-    padding-right: 200px;
-    padding-top: 20px;
-    font-weight: 100;
+    font-size: 22px;
+    font-weight: 130;
     font-family: Georgia;
-    margin-left: 35px;
     text-align: left;
     width: 70%;
 }
@@ -37,8 +38,36 @@ p{
     width: 100%;
 }
 
+figcaption{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    position: relative;
+    margin-left: 20px;
+    top: 80%;
+    width: 60%;
+    display: block;
+}
+
 .fig{
     height: 300px;
     background-size: cover;
     background-position: center;
+}
+
+.writer-img{
+    float: left;
+    width: 50px;
+}
+
+.pic-title{
+    float: left;
+    font-family: Helvetica;
+    color: gray;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 10px;
 }
