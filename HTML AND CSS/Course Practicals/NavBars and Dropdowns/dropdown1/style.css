@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("abstract.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+nav{
+    width: 100%;
+    height: 75px;
+    background-color: lightseagreen;
+}
+
+nav h1{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: white;
+    float: left;
+    font-size: 30px;
+    padding: 20px 20px;
+}
+
+nav ul{
+    float: right;
+}
+
+nav ul li{
+    justify-content: space-between;
+    padding: 20px 20px;
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+nav ul li ul{
+    display: block;
+    background-color: lightseagreen;
+    border-radius: 5px;
+    position: absolute;
+}
+
+nav ul li ul li{
+    line-height: 1px;
+    width: 100%;
+}
+
+nav ul li ul li a{
+    text-decoration: none;
+}
