@@ -88,6 +88,11 @@ span{
     text-align: center;
 }
 
+.line{
+    width: 50%;
+    margin: 0 auto;
+}
+
 .content p{
     margin-top: 60px;
     font-size: 16px;
