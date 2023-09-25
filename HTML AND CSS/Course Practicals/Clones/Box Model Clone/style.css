@@ -62,3 +62,20 @@ body{
     font-size: 40px;
     text-align: center;
 }
+
+.content{
+    text-align: center;
+    width: 400px;
+    height: 1000px;
+    margin: 0 auto;
+    overflow: scroll;
+    padding: 40px;
+}
+
+.content h3{
+    color: red;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 10px;
+}
