@@ -42,4 +42,15 @@ body{
     background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg"); 
     background-size: cover;
     background-position: bottom center;
+    height: 700px;
+    width: 100%;
+    /*overflow: scroll; */
+}
+
+.imagetext h1{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    border: 3px solid white;
 }
