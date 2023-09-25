@@ -19,6 +19,7 @@ body{
     padding: 20px;
     font-weight: 100;
     letter-spacing: 2px;
+    transition: .3s;
 }
 
 .navbar ul li.important{
@@ -28,6 +29,17 @@ body{
     color: black;
 }
 
-.donate{
+/*.donate{
     visibility: hidden;
+}*/
+
+/*Because i want to be extra */
+.navbar ul li:hover{
+    transform: scale(1.1);
+}
+
+.image{
+    background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg"); 
+    background-size: cover;
+    background-position: bottom center;
 }

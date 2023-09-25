@@ -24,9 +24,9 @@ body {
     letter-spacing: 4px;
   }
   
-  .donate{
+  /*.donate{
     visibility: hidden;
-  }
+  } */
   
   #banner {
     background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
