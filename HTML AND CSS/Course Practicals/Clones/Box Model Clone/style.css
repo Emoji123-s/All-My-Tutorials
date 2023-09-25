@@ -1,6 +1,6 @@
 *{
    margin: 0;
-   padding: 0; 
+   padding: 0;
 }
 
 body{
@@ -12,6 +12,7 @@ body{
     text-align: center;
     margin: 0;
     padding: 0;
+    color: grey;
 }
 
 .navbar ul li{
@@ -29,9 +30,9 @@ body{
     color: black;
 }
 
-/*.donate{
+.donate{
     visibility: hidden;
-}*/
+}
 
 /*Because i want to be extra */
 .navbar ul li:hover{
@@ -44,7 +45,6 @@ body{
     background-position: bottom center;
     height: 700px;
     width: 100%;
-    /*overflow: scroll; */
 }
 
 .imagetext{
@@ -63,6 +63,7 @@ body{
     text-align: center;
 }
 
+
 .content{
     text-align: center;
     width: 400px;
@@ -78,4 +79,56 @@ body{
     text-align: center;
     margin-top: 50px;
     padding: 20px 10px;
+}
+
+span{
+    font-size: 15px;
+    font-weight: light;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.content p{
+    margin-top: 60px;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    color: grey;
+    padding: 10px 20px;
+}
+
+.sidequote{
+    width: 400px;
+    height: 200px;
+}
+
+.sidequote h2{
+    color: red;
+    font-size: 15px;
+    line-height: 45px;
+    text-align: center;
+    padding: 15px 30px;
+    border: 1px dotted red;
+}
+
+.endbox{
+    height: 150px;
+    text-align: center;
+}
+
+.endbox a{
+    text-decoration: none;
+    background: red;
+    border-radius: 3px;
+    padding: 14px;
+    margin: 10px;
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+}
+
+.endbox a:hover{
+    border: 1px solid red;
+    background: white;
+    color: red;
 }
