@@ -1,12 +1,10 @@
 *{
-    margin: 0;
-    padding: 0;
     background-color: white;
     font-family: 'Yantramanav', sans-serif;
 }
 
 body{
-    padding: 50px 60px;
+   padding: 50px 60px;
 }
 
 h2{
@@ -53,28 +51,88 @@ h3{
     font-weight: 300;
 }
 
-#grid{
+.card-container {
+    display: inline-block;
     position: relative;
-    top: 90px;
-    text-align: center;
+    top: 40px;
 }
 
-.card{
+.card {
     width: 215px;
     height: 200px;
+    perspective: 1000px;
+    margin: 10px;
     display: inline-block;
-    border: 2px solid lightblue;
-    padding: 30px auto;
-    margin-top: 4px;
-    text-align: center;
-    transform-style: preserve-3d;
-    transition: transform 0.5s ease-in-out;
 }
 
-.card:hover{
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card:hover .card-inner {
     transform: rotateY(180deg);
 }
 
-.card img{
-    padding: 40px;
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card-front {
+    border: 2px solid lightblue;
+    border-radius: 2px;
+}
+
+.card-back {
+    background-color: lightblue;
+    transform: rotateY(180deg);
+}
+
+.card-back h6{
+    font-size: 17px;
+    color: white;
+    text-align: left;
+    position: relative;
+    bottom: 50px;
+    left: 70px;
+    text-decoration: none;
+    background-color: lightblue;
+}
+
+.card-back p{
+    text-decoration: none;
+    color: white;
+    background-color: darkblue;
+    margin-left: 20px;
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 12px;
+    position: relative;
+    top: 70px;
+    right: 65px;
+    cursor: pointer;
+}
+
+.day{
+    color: black;
+}
+
+#dev-id{
+    color: darkblue;
+    float: right;
+    font-size: 12px;
 }
