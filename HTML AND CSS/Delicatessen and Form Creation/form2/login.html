@@ -1,52 +1,46 @@
-<!--Create a form with multiple fields that accept user input.
-Add two separate sets of radio buttons or checkboxes.
-Search how to add a placeholder (hint hint) to an input field. A placeholder shows up when the field has no value, it disappears after the user types or selects something in the field -->
+<!--Recreating Alx's Login Page-->
 
-<!--For those who wuld want to run this, my screen is bad, so i chose random colors to aid viewing efficiency for me, to which it might look odd for a different user. Would definitely be fixed soon -->
-
-<!--They would need to have an account to continue, and then this would link to a webpage containing a food menu and their prices-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Welcome to Delicatessen</title>
+    <link rel="shortcut icon" href="alx.png" type="image/png">
+    <title>Sessions - new | Intranet</title>
 </head>
 <body>
-    <!--Read on Regex again-->
-
     <div class="container">
         <form action="">
-            <h1>Login</h1>
+            <div class="imagecontainer">
+                <img src="alx.png" alt="ALX Logo Black and White" height="100px">
+            </div>
             <div class="namepasswd">
-                <label for="username">Username: </label>
-                <input type="text" name="username" id="username" placeholder="Enter Username">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
             </div>
 
             <div class="namepasswd">
-                <label for="password">Password: </label>
-                <input type="password"  name="password"  id="password" placeholder="Enter Password">
+                <label for="password">Password</label>
+                <input type="password"  name="password"  id="password" required>
             </div>
 
-            <div class="remember-forgot">
-                <input type="checkbox" name="" id="">
-                <label for="">Remember Me</label>
-                <a href="google.com">I don't remember my Password</a>
+            <div class="rememberme">
+                <input type="checkbox" name="" id="rememberme">
+                <label for="rememberme">Remember me</label>
+                <div class="btnclass">
+                    <button class="btn">Log in</button>
+                </div>
             </div>
 
-            <div class="button">
-                <input type="submit">
-            </div>
-
-            <div class="newaccount">
-                <p>New Here? <a href="#">Create an Account</a></p>
+            <div class="forgot">
+                <a href="#">Forgot your password?</a>
             </div>
         </form>
     </div>
-
-   <!-- <footer>
-        <h5 class="dev-class" id="dev-id">Designed by Isaac-Victor Providence</h5>
-    </footer> --> 
+    <!--
+    <footer>
+        <p class="dev-class" id="dev-id">Copyright &copy; 2023 ALX, All rights reserved.</p>
+    </footer> -->
 </body>
 </html>    
