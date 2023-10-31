@@ -5,7 +5,7 @@
 
 body{
     opacity: 0.95;
-    background-color: color-mix(in hsl, pink 80%, white 20%);
+    background-color: color-mix(in hsl, darkseagreen 20%, white 80%);
 }
 
 header{
@@ -106,5 +106,44 @@ header h1{
 }
 
 .countries{
-    
+    width: 75%;
+    padding: 20px 30px 40px 30px;
+    margin: 40px auto;
+}
+
+.countries h2{
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;
+    color: #b4592f;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 50px 0 20px 0;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.countries p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: black;
+    text-align: left;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.countries a{
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+}
+
+hr{
+    margin-top: 70px;
 }
