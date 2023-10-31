@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    opacity: 0.95;
+    background-color: color-mix(in hsl, pink 80%, white 20%);
+}
+
+header{
+    background-image: url(https://images.unsplash.com/photo-1455267847942-f4fdb784f0c5?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb);
+    background-position: center center;
+    height: 400px;
+}
+
+header h1{
+    font-family: 'Covered By Your Grace', sans-serif;
+    font-size: 100px;
+    position: relative;
+    top: 20%;
+    background-color: transparent;
+    text-align: center;
+    color: #421515;
+    line-height: 76px;
+    margin: 0;
+}
+
+.container{
+    padding: 20px 30px 40px 30px;
+    margin: 40px auto;
+    overflow: auto;
+    background: #ffffff;
+    width: 75%;
+    /*box-shadow: 0px 0px 1px 1px black; */
+}
+
+.note h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+    margin: 20px;
+}
+
+.note p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #969696;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.roastlevels div{
+    padding: 0 20px;
+    overflow: auto;
+}
+
+.roastlevels h2{
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin: 30px 0 20px 0;
+    color: white;
+}
+
+.roastlevels h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.roastlevels p{
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.greenbeans{
+    background-color: #8fbc8f;
+}
+
+.lightroast{
+    background-color: #a0522d;
+}
+
+.cityroast{
+    background-color: #8b4513;
+}
+
+.vienna{
+    background-color: #a52a2a;
+}
+
+.italian{
+    background-color: #000000;
+}
+
+.countries{
+    
+}
