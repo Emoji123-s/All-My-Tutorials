@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Krinkes;
+    src: url('fonts/krinkes/KrinkesDecorPERSONAL.ttf') format('truetype');
+}
+
+body{
+    background-color: #F2EDE9;
+}
+
+main{
+    max-width: 500px;
+    width: 80%;
+    background-color: #703132;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo h1{
+    text-align: center;
+    font-family: 'Krinkes';
+    position: relative;
+    top: 15px;
+    font-size: 40px;
+}
+
+.logo h2, .logo h3{
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+    position: relative;
+    bottom: 20px;
+}
+
+hr{
+    height: 1px;
+    border-color: #703132;
+    position: relative;
+    bottom: 20px;
+}
+
