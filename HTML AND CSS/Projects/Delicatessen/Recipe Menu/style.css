@@ -3,24 +3,32 @@
     src: url('fonts/krinkes/KrinkesDecorPERSONAL.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: Krinkes2;
+    src: url('fonts/krinkes/KrinkesRegularPERSONAL.ttf') format('truetype');
+}
+
 body{
-    background-color: #F2EDE9;
+    background-color: #F0F4FD;
+    padding: 20px;
 }
 
 main{
     max-width: 500px;
     width: 80%;
-    background-color: #703132;
+    background-color: #5E9FFF;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
 }
 
 .logo h1{
     text-align: center;
-    font-family: 'Krinkes';
+    font-family: 'Krinkes', sans-serif;
     position: relative;
     top: 15px;
     font-size: 40px;
+    font-weight: 700;
 }
 
 .logo h2, .logo h3{
@@ -36,5 +44,59 @@ hr{
     border-color: #703132;
     position: relative;
     bottom: 20px;
+    margin-top: 25px;
 }
 
+h1{
+    font-family: 'Krinkes2', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.item p{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.dish, .pastry{
+    text-align: left;
+    width: 75%;
+    line-height: 1.5;
+}
+
+.price{
+    text-align: right;
+    width: 25%;
+}
+
+footer p{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Krinkes2', sans-serif;
+    position: relative;
+    bottom: 20px;
+}
+
+footer h3{
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    bottom: 25px;
+}
+
+.imgcontainer{
+    background-color: transparent;
+}
+
+img{
+    width: 30px;
+    display: inline-block;
+    position: relative;
+    left: 180px;
+    bottom: 30px;
+    padding: 10px;
+}
