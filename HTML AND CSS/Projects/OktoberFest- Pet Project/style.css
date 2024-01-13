@@ -1,23 +1,27 @@
 *{
-    background-color: white;
+    /*background-color: white; */
     font-family: 'Yantramanav', sans-serif;
 }
 
 body{
-   padding: 50px 60px;
+    padding: 50px 60px;
+    background-image: url('hallow2.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 h2{
     font-size: 16px;
     letter-spacing: 2px;
     text-align: center;
-    color: grey;
+    color: white;
     font-weight: lighter;
     margin: 0;
 }
 
 h1{
-    color: darkblue;
+    color: orange;
     font-size: 50px;
     text-align: center;
     font-weight: normal;
@@ -28,7 +32,7 @@ h3{
     font-size: 16px;
     font-weight: lighter;
     text-align: center;
-    color: grey;
+    color: white;
     line-height: 21px;
     margin: 0;
 }
@@ -40,15 +44,15 @@ h3{
 
 .steps a{
     text-decoration: none;
-    color: darkblue;
-    background-color: lightblue;
+    color: orange;
+    background-color: black;
     padding: 12px;
     margin-left: 20px;
     display: inline-block;
     border-radius: 3px;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .card-container {
