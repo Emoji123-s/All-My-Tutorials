@@ -143,8 +143,17 @@ a:hover{
     color: darkorange;
 }
 
+a:visited{
+    color: white;
+}
+
+.one{
+    color: white;
+}
+
 #dev-id{
-    color: darkblue;
+    color: orange;
     float: right;
-    font-size: 12px;
+    font-size: 18px;
+    letter-spacing: 2px;
 }
