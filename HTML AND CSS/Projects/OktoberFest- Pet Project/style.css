@@ -16,7 +16,7 @@ h2{
     letter-spacing: 2px;
     text-align: center;
     color: white;
-    font-weight: lighter;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -30,10 +30,11 @@ h1{
 
 h3{
     font-size: 16px;
-    font-weight: lighter;
+    font-weight: 400;
     text-align: center;
     color: white;
     line-height: 21px;
+    letter-spacing:2px;
     margin: 0;
 }
 
@@ -95,12 +96,12 @@ h3{
 }
 
 .card-front {
-    border: 2px solid lightblue;
+    border: 2px solid orange;
     border-radius: 2px;
 }
 
 .card-back {
-    background-color: lightblue;
+    background-image: url('hallow2.avif');
     transform: rotateY(180deg);
 }
 
@@ -112,18 +113,17 @@ h3{
     bottom: 50px;
     left: 70px;
     text-decoration: none;
-    background-color: lightblue;
 }
 
 .card-back p{
     text-decoration: none;
-    color: white;
-    background-color: darkblue;
+    color: orange;
+    background-color: black;
     margin-left: 20px;
     border-radius: 3px;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 12px;
     position: relative;
     top: 70px;
@@ -132,7 +132,7 @@ h3{
 }
 
 .day{
-    color: black;
+    color: white;
 }
 
 #dev-id{
