@@ -115,7 +115,7 @@ p{
     color: white;
     cursor: pointer;
 }
-/*
+
 @keyframes fadeIn{
     0% {
         opacity: 0;
@@ -132,7 +132,7 @@ p{
     opacity: 0;
     animation: fadeIn 1s ease-in-out 7s forwards;
 }
-*/
+
 
 a{
     text-decoration: none;
