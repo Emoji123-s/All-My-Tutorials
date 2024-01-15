@@ -101,20 +101,19 @@ p{
 }
 
 .btn{
-    border: none;
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    background: blue;
-    color: white;
-    transition: .3s;
-    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
 }
 
-.btn:hover{
+.centered{
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border-width: 1px;
+    font-weight: 700;
+    background-color: blue;
     color: white;
-    background-color: black;
+    cursor: pointer;
 }
 /*
 @keyframes fadeIn{
