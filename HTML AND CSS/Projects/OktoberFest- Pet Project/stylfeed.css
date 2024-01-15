@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body{
@@ -11,7 +12,6 @@ body{
 
 .top h1{
     font-size: 65px;
-    font-family: ;
     color: blue;
     text-transform: capitalize;
 }
@@ -30,16 +30,41 @@ body{
 
 h1{
     opacity: 0;
-    animation: fadeIn 1s ease-in-out 1s forwards;
+    animation: fadeIn 0.5s ease-in-out 1s forwards;
 }
 
 input{
     padding: 10px;
     border-radius: 8px;
     border-width: 1px;
-    text-align: right;
+    text-align: center;
+    width: 40%;
 }
 
 input::placeholder{
     color: #000;
+    font-size: 15px;
+}
+
+textarea::placeholder{
+    text-align: center;
+    
+    color: #000;
+    font-size: 15px;
+}
+
+.btn{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.centered{
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border-width: 1px;
+    font-weight: 700;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
 }
