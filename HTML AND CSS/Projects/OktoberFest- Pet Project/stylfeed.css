@@ -8,6 +8,9 @@ body{
     justify-content: center;
     text-align: center;
     margin-top: 100px;
+    background-image: url('images/creative-wallpaper-with-white-shapes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .top h1{
@@ -67,4 +70,14 @@ textarea::placeholder{
     background-color: blue;
     color: white;
     cursor: pointer;
+}
+
+.description{
+}
+
+.description i{
+    position: absolute;
+    left: 20%;
+    transform: translateY(-50%);
+    color: #888;
 }
