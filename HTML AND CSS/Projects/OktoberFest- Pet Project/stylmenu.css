@@ -5,7 +5,8 @@
 
 body{
     font-family: monospace;
-    background: #eee;
+    background-image: url('images/food.avif');
+    
 }
 
 html{
@@ -14,7 +15,8 @@ html{
 
 .main{
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cards{
@@ -41,7 +43,7 @@ html{
     left: 60%;
     top: 0;
     height: 45px;
-    background: #e6e6e6b8;
+    background: rgba(230, 230, 230, 0.722);
 }
 
 .card-image:after{
@@ -96,13 +98,13 @@ p{
 
 #send{
     text-align: center;
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
 }
 
 .btn{
     text-align: center;
-    margin-top: 10px;
 }
 
 .centered{
@@ -111,7 +113,7 @@ p{
     border-radius: 5px;
     border-width: 1px;
     font-weight: 700;
-    background-color: blue;
+    background-color: gold;
     color: white;
     cursor: pointer;
 }
