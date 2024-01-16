@@ -72,12 +72,9 @@ textarea::placeholder{
     cursor: pointer;
 }
 
-.description{
-}
-
 .description i{
-    position: absolute;
-    left: 20%;
-    transform: translateY(-50%);
-    color: #888;
+    font-size: 24px;
+    position: relative;
+    left: 3%;
+    top: 6px;
 }
