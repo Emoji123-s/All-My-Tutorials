@@ -1,12 +1,13 @@
 *{
     box-sizing: border-box;
     padding: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
 body{
     font-family: monospace;
     background-image: url('images/food.avif');
-    
 }
 
 html{
@@ -32,6 +33,7 @@ html{
 
 .card-image{
     height: calc(13*1.2rem);
+    width: 100%;
     position: relative;
     padding: 1.2rem 1.2rem 0;
 }
