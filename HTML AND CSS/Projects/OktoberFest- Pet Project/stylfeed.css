@@ -1,11 +1,11 @@
 *{
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items: center;
+    justify-content: center;
 }
 
 body{
-    align-items: center;
-    justify-content: center;
     text-align: center;
     margin-top: 100px;
     background-image: url('images/creative-wallpaper-with-white-shapes.jpg');
@@ -47,11 +47,11 @@ input{
 input::placeholder{
     color: #000;
     font-size: 15px;
+    text-align: center;
 }
 
 textarea::placeholder{
     text-align: center;
-    
     color: #000;
     font-size: 15px;
 }
@@ -60,6 +60,7 @@ textarea::placeholder{
     text-align: center;
     margin-top: 15px;
 }
+
 
 .centered{
     padding: 10px 20px;
@@ -75,6 +76,6 @@ textarea::placeholder{
 .description i{
     font-size: 24px;
     position: relative;
-    left: 3%;
+    left: 40px;
     top: 6px;
 }
