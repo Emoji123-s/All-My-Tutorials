@@ -90,6 +90,11 @@ p{
     color: #000;
 }
 
+span{
+    font-weight: bold;
+    font-size: 17px;
+}
+
 .fb{
     text-align: center;
     margin: 0 auto;
