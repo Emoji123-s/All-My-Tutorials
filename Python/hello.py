@@ -1,4 +1,6 @@
 print("Hello World")
 print(50)
 print("Hello", "world")
-print("Active deployment")
+a = ("Python is cool")
+print(a[:6])
+print(f"{98} Battery street")
