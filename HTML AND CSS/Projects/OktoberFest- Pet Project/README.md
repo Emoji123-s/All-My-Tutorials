@@ -26,7 +26,7 @@ The project aims to showcase HTML and CSS skills while providing an interactive 
 No installation required. Simply open the HTML file in a web browser to view the project.
 
 ## Credits
-This project was created by Isaac-Victor Providence as a personal challenge to showcase HTML and CSS skills. 
+This project was created by Isaac-Victor Providence as a personal challenge to showcase HTML and CSS skills, and will undergo changes and developments over the coming months. 
 
 <!--## License
 This project is licensed under the [Your License Name] License - see the [LICENSE.md](LICENSE.md) file for details. -->
