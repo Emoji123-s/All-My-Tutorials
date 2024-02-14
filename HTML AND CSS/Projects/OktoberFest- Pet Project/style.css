@@ -119,6 +119,8 @@ h3{
 .card-back p{
     text-decoration: none;
     color: orange;
+    width: 120px;
+    padding: 5px;
     background-color: black;
     margin-left: 20px;
     border-radius: 3px;
