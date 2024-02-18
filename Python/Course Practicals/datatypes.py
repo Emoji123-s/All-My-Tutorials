@@ -45,3 +45,18 @@ print(name[0]) # All characters start counting from 0
 
 print("123" + "1") # This won't add, just concatenate them without spacing
 print(a + b) # This will add, because they are both integers
+
+# If you want to ignore special characters
+print("Jenny's Lectures") # This will print just fine, but suppose i want to do this
+#print("Jenny's "Lectures"") we could skip this by using one backward slash for the places we want to skip
+print("Jenny\'s \"Lectures\"") # This would work fine, as Jenny's, and "Lectures"
+print("Jenny\'s \n \"Lectures\"") # This woiuld also work, but we could always skip it and print it out on one line.
+print("Jenny\'s \\n \"Lectures\"") # This would print as Jenny's \n "Lectures"
+
+# To multiply the result, we can do this
+print(5 * "Jenny\'s \\n \"Lectures\"") # Since we are printing all on the same line, this would print 5 times on the same line
+
+# Boolean
+age = True # Boolean has to be capitalized, else, you'll produce a name error.
+print(age)
+print(type(age))
