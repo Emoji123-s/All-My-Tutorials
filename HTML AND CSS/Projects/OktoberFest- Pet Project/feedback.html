@@ -16,13 +16,14 @@
 
         <div class="description">
             <form action="feedback.html" method="post">
-                <i class='bx bxs-camera'></i>
-                <input type="text" id="image" placeholder="Insert an Image (Max 10MB)">
+                <label>Upload a profile picture: <input type="file" /></label>
                 <br>
                 <br>
-                <textarea name="" id="" cols="50" rows="10" placeholder="Contributions, Improvements, Feelings...." required></textarea>
+                <textarea name="contribution" id="contribution" cols="50" rows="10" placeholder="Contributions, Improvements, Feelings...." required></textarea>
             </form>
         </div>
+
+        
         <div class="btn">
             <button class="centered" onclick="alert('Feedback Successfully Sent')">Submit</button>
         </div>
