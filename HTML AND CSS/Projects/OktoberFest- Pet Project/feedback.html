@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OktoberFest Survey Form</title>
 </head>
 <body>
-    
+    <header>
+        <h1 id="title">OktoberFest Survey Form</h1>
+        <p id="description">We would love to hear from you</p>
+    </header>
+    <main>
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">Enter your Name: <input type="text" id="name" placeholder="e.g, Divine Providence" required></label>
+            <label for="email" id="email-label">Enter your Email: <input type="email" id="email" required pattern="[a-z0-9]{10,}" placeholder="johncurry@gmail.com"></label>
+            <label for="number" id="number-label">Input your Age: <input type="number" id="number" pattern="[0-9]" min="8" max="80" placeholder="8"></label>
+            <legend>Select Gender: 
+                <label for="gender">Male<input type="radio" name="gender" value="male" id="gender"></label>
+                <label for="gender">Female<input type="radio" name="gender" value="female" id="gender"></label>
+            </legend>
+            <label>What day is this feedback for? 
+                <select id="dropdown">
+                    <option>Day 1</option>
+                    <option>Day 2</option>
+                    <option>Day 3</option>
+                    <option>Day 4</option>
+                    <option>Day 5</option>
+                    <option>Day 6</option>
+                    <option>Day 7</option>
+                    <option>Day 8</option>
+                    <option>Day 9</option>
+                    <option>Day 10</option>
+                </select>
+            </label>
+            
+        </form>
+    </main>
 </body>
 </html>
