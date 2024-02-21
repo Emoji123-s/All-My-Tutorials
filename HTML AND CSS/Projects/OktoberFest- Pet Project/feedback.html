@@ -6,19 +6,24 @@
     <title>OktoberFest Survey Form</title>
 </head>
 <body>
-    <header>
+    <main>
         <h1 id="title">OktoberFest Survey Form</h1>
         <p id="description">We would love to hear from you</p>
-    </header>
-    <main>
         <form action="" id="survey-form">
             <label for="name" id="name-label">Enter your Name: <input type="text" id="name" placeholder="e.g, Divine Providence" required></label>
+
             <label for="email" id="email-label">Enter your Email: <input type="email" id="email" required pattern="[a-z0-9]{10,}" placeholder="johncurry@gmail.com"></label>
+
             <label for="number" id="number-label">Input your Age: <input type="number" id="number" pattern="[0-9]" min="8" max="80" placeholder="8"></label>
-            <legend>Select Gender: 
-                <label for="gender">Male<input type="radio" name="gender" value="male" id="gender"></label>
-                <label for="gender">Female<input type="radio" name="gender" value="female" id="gender"></label>
-            </legend>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+
             <label>What day is this feedback for? 
                 <select id="dropdown">
                     <option>Day 1</option>
@@ -31,9 +36,38 @@
                     <option>Day 8</option>
                     <option>Day 9</option>
                     <option>Day 10</option>
+                    <option>Day 11</option>
+                    <option>Day 12</option>
+                    <option>Day 13</option>
+                    <option>Day 14</option>
+                    <option>Day 15</option>
+                    <option>Day 16</option>
+                    <option>Day 17</option>
+                    <option>Day 18</option>
+                    <option>Day 19</option>
+                    <option>Day 20</option>
+                    <option>Day 21</option>
+                    <option>Day 22</option>
+                    <option>Day 23</option>
+                    <option>Day 24</option>
+                    <option>Day 25</option>
+                    <option>Day 26</option>
+                    <option>Day 27</option>
+                    <option>Day 28</option>
+                    <option>Day 29</option>
+                    <option>Day 30</option>
+                    <option>Day 31</option>
                 </select>
             </label>
-            
+
+            <label for="recipe_image">Recipe Image:</label>
+            <input type="file" id="recipe_image" name="recipe_image" required>
+
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
         </form>
     </main>
 </body>
