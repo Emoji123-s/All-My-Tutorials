@@ -6,10 +6,7 @@
     <link rel="stylesheet" href="stylfeed.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>OktoberFest Survey Form</title>
 </head>
 <body>
@@ -17,9 +14,9 @@
         <h1 id="title">OktoberFest Survey Form</h1>
         <p id="description">We would love to hear from you</p>
         <form action="" id="survey-form">
-            <label for="name" id="name-label">Enter your Name: <input type="text" id="name" placeholder="e.g, Divine Providence" required></label>
+            <label for="name" id="name-label">Enter your Full Name: <input type="text" id="name" placeholder="e.g, Divine Providence" required></label>
 
-            <label for="email" id="email-label">Enter your Email: <input type="email" id="email" required pattern="[a-z0-9]{10,}" placeholder="johncurry@gmail.com"></label>
+            <label for="email" id="email-label">Enter your Email: <input type="email" id="email" required pattern="[a-z0-9]{40,}" placeholder="johncurry@gmail.com"></label>
 
             <label for="number" id="number-label">Input your Age: <input type="number" id="number" pattern="[0-9]" min="8" max="80" placeholder="8"></label>
 
@@ -28,6 +25,7 @@
                 <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="other">Other</option>
+                <option value="Notsay">I'd rather not say</option>
             </select>
 
 
@@ -70,9 +68,16 @@
             <label for="recipe_image">Recipe Image:</label>
             <input type="file" id="recipe_image" name="recipe_image" required>
 
+            <p id="impressed">How impressed are you with the recipe?</p>
+            <label for="impressed">1<input type="radio" name="impressed" id="one" value="1"></label>
+            <label for="impressed">2<input type="radio" name="impressed" id="two" value="2"></label>
+            <label for="impressed">3<input type="radio" name="impressed" id="three" value="3"></label>
+            <label for="impressed">4<input type="radio" name="impressed" id="four" value="4"></label>
+            <label for="impressed">5<input type="radio" name="impressed" id="five"value="5"></label>
+            <br>
 
-            <label for="feedback">Feedback:</label>
-            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+            <label for="feedback">Feedback (Optional):</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Thoughts, Feelings, Contributions...."></textarea>
 
             <button type="submit">Submit</button>
         </form>

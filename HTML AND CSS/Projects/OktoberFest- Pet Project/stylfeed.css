@@ -1,3 +1,10 @@
+body{
+    background-image: url(images/food2.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 main{
     max-width: 500px;
     margin: 0 auto;
@@ -5,7 +12,7 @@ main{
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 #title{
@@ -16,11 +23,16 @@ main{
 #description{
     text-align: center;
     color: #333;
+    font-style: italic;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
+    color: #555;
+}
+
+#impressed{
     color: #555;
 }
 
@@ -38,6 +50,10 @@ textarea {
   box-sizing: border-box;
 }
 
+label, p{
+    font-weight: 600;
+}
+
 input[type="file"] {
     margin-top: 5px;
 }
@@ -50,6 +66,7 @@ button[type="submit"] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 button[type="submit"]:hover {
