@@ -18,12 +18,13 @@ body{
 }
 
 .holder span{
-    width: 5px;
+    width: 6px;
     height: 100%;
     display: block;
     margin: auto;
     animation: animate 1s infinite ease-in-out;
     animation-delay: calc(.1s * var(--i));
+    border-radius: 10px;
 }
 
 @keyframes animate{

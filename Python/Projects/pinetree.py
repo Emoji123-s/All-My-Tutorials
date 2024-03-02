@@ -1,0 +1,1 @@
+# Create a pine tree with the hash symbol(#) based on user's input on the number of rows.
