@@ -30,7 +30,7 @@ for i in range(10):
     investment = investment + (investment * interest)
 
 print("Money after 10 years: {:.2f}".format(investment))
-"""
+
 
 # While loop - As long as a condition remains true, we can continue looping with a while loop. We do this when we don't know how many times we want to loop
 
@@ -43,3 +43,10 @@ while (i != rand_num):
     i += 1
 
 print("The random value is: ", rand_num)
+"""
+
+# The continue function is going to stop executing the code that remains in the loop, while break jumps completely out of the loop 
+# Printing a pine tree
+# use 1 while loop and 3 for loops, and should work with any number provided
+
+
