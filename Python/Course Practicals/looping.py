@@ -12,10 +12,9 @@ for i in range(1, 21):
 var1 = float(input("Enter a float: "))
 
 print("Rounded to 2 decimal places: {:.2f}".format(var1))
-"""
+
 
 # Compound Interest
-"""
 Have the user enter their investment amount and their expected interest
 Each year, their investment will increase by their investment + their investment * interest
 Print out the earnings after a 10 years period
@@ -32,21 +31,31 @@ for i in range(10):
 print("Money after 10 years: {:.2f}".format(investment))
 
 
-# While loop - As long as a condition remains true, we can continue looping with a while loop. We do this when we don't know how many times we want to loop
-
-import random # This will generate random numbers for us, and we can use the different functions associated with the import
-
-rand_num = random.randrange(1, 51) # This should generate numbers from 1-50
-# The value we are going to be incrementing has to be defined before the loop
-i = 1
-while (i != rand_num):
-    i += 1
-
-print("The random value is: ", rand_num)
+# While loop - As long as a condition remains true, we can continue looping with a while loop. We do this when we don't know how many times we want to loop. 
 """
+import random # We can use every function associated with this import
 
-# The continue function is going to stop executing the code that remains in the loop, while break jumps completely out of the loop 
-# Printing a pine tree
-# use 1 while loop and 3 for loops, and should work with any number provided
+rand_num = random.randrange(1, 51) # The first variable can be anything, seeing as it is just a containing variable. With this we can generate numbers from 1-50.
+# Whenever we are working with while loop, the value we are to increment will be defined before the loop
+i = 1
+# Then define the condition that while = true, we will continue looping
+while (i != rand_num):
+    i += 1 # You always increment your iterator while inside a while loop
+
+print("Random value is", rand_num)
 
 
+# Break and Continue
+# The continue stops executing the code that remains in the loop, while break jumps completely out of a loop
+i = 1
+
+while (1 <= 20):
+    if((i % 2) == 0):
+        i += 1
+        continue
+
+    if(i == 15):
+        break
+    
+    print("Odd: ", i)
+    i += 1
