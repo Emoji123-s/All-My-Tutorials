@@ -4,7 +4,7 @@ Input : Current Age
 Output: A message containing "You have a days, b weeks and c months left"
 1 year = 365 days
 1 year = 52 weeks
-1 year = 12 months(excluding the leap year)
+1 year = 12 months
 """
 # Request input from the user
 age_left = int(input("Enter your current age : "))
