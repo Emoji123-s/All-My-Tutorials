@@ -17,11 +17,7 @@ total = years - age
 # Conditons if the user decides to be crazy :)
 if(age > years):
     print("Invalid Format, Years > Age")
-
-if(age == years):
-    print("You aren't a living being anymore :'(")
-
-if(age < years):
+else:
     # Formula
 
     # If 1 year = 365 days
@@ -35,3 +31,9 @@ if(age < years):
 
     # printing
     print(f"You have {days} days, {weeks} weeks, and {months} months left")
+
+if (age == 0):
+    print("0 is not a valid age")
+    
+if(age == years):
+    print("You aren't a living being anymore :'(")
