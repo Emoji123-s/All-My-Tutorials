@@ -1,4 +1,5 @@
 # A program to mimic Glo's Ussd service. Assuming the user already dialed *312#
+
 first_format = """
 1 = Buy Data
 2 = Gift Data
@@ -20,18 +21,18 @@ if (number == 1):
     """
     print(format)
 
-    inside = int(input("Enter a number : "))
+    inside = int(input("Enter a number : ")) # Auto-Renew
     if (inside == 1):
         format1 = """
-    1 = Mini Plans
-    2 = Monthly Plans
-    3 = Mega Plans
-    4 = Super Mega Plans
-    5 = Special Data Offer
-    6 = Social Bundles
-    7 = Night and Weekend Plans
-    8 = GLOTV Plans 
-    """
+        1 = Mini Plans
+        2 = Monthly Plans
+        3 = Mega Plans
+        4 = Super Mega Plans
+        5 = Special Data Offer
+        6 = Social Bundles
+        7 = Night and Weekend Plans
+        8 = GLOTV Plans 
+        """
         print(format1)
         inside1 = int(input("Enter a number : "))
         if (inside1 == 1):
@@ -46,9 +47,35 @@ if (number == 1):
             inside_2 = int(input("Enter a number : "))
             if (inside_2 == 1):
                 print(f"Activation of 150MB 1 Day incl 35MB nite is successful and will expire tomorrow. See messages for full details")
+            elif (inside_2 == 2):
+                print(f"Activation of 350MB 2 Day incl 110MB nite is successful and will expire 15/03/2024 at 15:15pm. See messages for full details")
+            elif (inside_2 == 3):
+                print(f"Activation of 1.8GB 1 Day incl 1GB nite is successful and will expire on 14/04/2024. See messages for full details")
+            elif (inside_2 == 4):
+                print(f"Activation of 50MB 1 Day incl 5MB nite is successful and will expire on 14/04/2024 qt 15:15pm. See messages for full details")
+        elif (inside1 == 2):
+            format3 = """
+            1 = N1000 = 3.9GB 30 Days incl 2GB nite
+            2 = N1500 = 7.5GB 30 Day incl 4GB nite
+            3 = N2000 = 9.2GB 30 Days incl 4GB nite
+            4 = N2500 = 10.8GB 30 Day incl 4MB nite
+            5 = More Plans
+            99 = Back
+            0 = Exit
+            """
+            print(format3)
+            inside_2 = int(input("Enter a number : "))
+            if (inside_2 == 1):
+                print(f"Activation of One-Off 3.9GB 1 Day incl 35MB nite is successful and will expire 14/04/2024 at 15:15pm. See messages for full details")
+            elif (inside_2 == 2):
+                print(f"Activation of One-Off 7.5GB 2 Day incl 110MB nite is successful and will expire 15/03/2024 at 15:15pm. See messages for full details")
+            elif (inside_2 == 3):
+                print(f"Activation of One-Off 9.2GB 1 Day incl 1GB nite is successful and will expire on 14/04/2024. See messages for full details")
+            elif (inside_2 == 4):
+                print(f"Activation of One-Off 10.8GB 1 Day incl 5MB nite is successful and will expire on 14/04/2024 qt 15:15pm. See messages for full details")
 
 
-    elif (inside == 2):
+    elif (inside == 2): # One-Off
         format2 = """
     1 = Mini Plans
     2 = Monthly Plans
@@ -71,7 +98,36 @@ if (number == 1):
             print(format_1)
             inside_2 = int(input("Enter a number : "))
             if (inside_2 == 1):
-                print(f"Activation of 150MB 1 Day incl 35MB nite is successful and will expire tomorrow. See messages for full details")
+                print(f"Activation of One-Off 150MB 1 Day incl 35MB nite is successful and will expire 14/04/2024 at 15:15pm. See messages for full details")
+            elif (inside_2 == 2):
+                print(f"Activation of One-Off 350MB 2 Day incl 110MB nite is successful and will expire 15/03/2024 at 15:15pm. See messages for full details")
+            elif (inside_2 == 3):
+                print(f"Activation of One-Off 1.8GB 1 Day incl 1GB nite is successful and will expire on 14/04/2024. See messages for full details")
+            elif (inside_2 == 4):
+                print(f"Activation of One-Off 50MB 1 Day incl 5MB nite is successful and will expire on 14/04/2024 qt 15:15pm. See messages for full details")
+                
+        elif (inside == 2):
+            format3 = """
+            1 = N1000 = 3.9GB 30 Days incl 2GB nite
+            2 = N1500 = 7.5GB 30 Day incl 4GB nite
+            3 = N2000 = 9.2GB 30 Days incl 4GB nite
+            4 = N2500 = 10.8GB 30 Day incl 4MB nite
+            5 = More Plans
+            99 = Back
+            0 = Exit
+            """
+            print(format3)
+            inside_2 = int(input("Enter a number : "))
+            if (inside_2 == 1):
+                print(f"Activation of One-Off 3.9GB 1 Day incl 35MB nite is successful and will expire 14/04/2024 at 15:15pm. See messages for full details")
+            elif (inside_2 == 2):
+                print(f"Activation of One-Off 7.5GB 2 Day incl 110MB nite is successful and will expire 15/03/2024 at 15:15pm. See messages for full details")
+            elif (inside_2 == 3):
+                print(f"Activation of One-Off 9.2GB 1 Day incl 1GB nite is successful and will expire on 14/04/2024. See messages for full details")
+            elif (inside_2 == 4):
+                print(f"Activation of One-Off 10.8GB 1 Day incl 5MB nite is successful and will expire on 14/04/2024 qt 15:15pm. See messages for full details")
+
+
 
     elif (inside == 99):
         format3 = """
