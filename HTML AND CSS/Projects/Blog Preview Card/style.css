@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -7,35 +7,36 @@
     src: url('assets/fonts/Figtree-VariableFont_wght.ttf');
 }
 
-body{
+body {
     background-color: hsl(47, 88%, 63%);
     margin-top: 100px;
     font-size: 16px;
 }
-.container{
+
+.container {
     background-color: hsl(0, 0%, 100%);
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    border-left: 1px solid black;
-    border-top: 1px solid black;
+    border: 1px solid black;
     width: 315px;
     height: 430px;
     box-shadow: 7px 7px 0 0 black;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
 }
 
-.asset{
+.asset {
     border-radius: 10px;
-    margin-top: 16px;
+    margin-top: 50px;
     width: 280px;
 }
 
-.learning{
-    position: relative;
-    left: 20px;
+.learning {
     background: hsl(47, 88%, 63%);
     width: 25%;
     padding: 6px;
@@ -43,26 +44,26 @@ body{
     font-weight: 800;
     font-family: "Page", sans-serif;
     font-size: 0.875rem;
+    margin-left: 20px;
 }
 
-.published{
-    position: relative;
-    right: 60px;
+.published {
     font-family: "Page", sans-serif;
     font-size: 0.938rem;
     font-weight: 500;
+    position: relative;
+    right: 60px;
 }
 
-.maintext{
-    position: relative;
-    right: 15px;
+.maintext {
     font-family: "Page", sans-serif;
     font-size: 1.313rem;
     font-weight: 800;
+    position: relative;
+    right: 15px;
 }
 
-.description{
-    position: relative;
+.description {
     border-radius: 5px;
     font-family: "Page", sans-serif;
     font-size: 0.813rem;
@@ -73,13 +74,13 @@ body{
     line-height: 20px;
 }
 
-.imgauthor{
+.imgauthor {
     width: 30px;
     position: relative;
     right: 125px;
 }
 
-.name{
+.name {
     font-size: 0.813rem;
     font-weight: 800;
     font-family: "Page", sans-serif;
@@ -88,15 +89,15 @@ body{
     right: 60px;
 }
 
-.container:hover{
+.container:hover {
     box-shadow: 12px 12px 0 0 black;
 }
 
-.maintext:hover{
+.maintext:hover {
     color: hsl(47, 88%, 63%);
     cursor: pointer;
 }
-
+/*
 @media screen and (max-width: 768px) {
     .container {
         width: 315px;
@@ -114,7 +115,10 @@ body{
     .image,
     .card-text,
     .author {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
     }
 
@@ -127,18 +131,18 @@ body{
         margin-left: 30px;
     }
 
-    .maintext{
+    .maintext {
         margin-left: 10px;
         font-size: 1.2rem;
     }
 
-    .description{
+    .description {
         margin-left: 15px;
         font-size: 0.7rem;
         line-height: 18px;
     }
 
-    .imgauthor{
+    .imgauthor {
         margin-left: 35px;
     }
 
@@ -147,3 +151,4 @@ body{
         margin-left: 25px;
     }
 }
+*/
