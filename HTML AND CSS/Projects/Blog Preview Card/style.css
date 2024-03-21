@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Page";
+    src: url('assets/fonts/Figtree-VariableFont_wght.ttf');
+}
+
+body{
+    background-color: hsl(47, 88%, 63%);
+    margin-top: 100px;
+    font-size: 16px;
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    width: 315px;
+    height: 430px;
+    box-shadow: 7px 7px 0 0 black;
+}
+
+.asset{
+    border-radius: 10px;
+    margin-top: 16px;
+    width: 280px;
+}
+
+.learning{
+    position: relative;
+    left: 20px;
+    background: hsl(47, 88%, 63%);
+    width: 25%;
+    padding: 6px;
+    border-radius: 3px;
+    font-weight: 800;
+    font-family: "Page", sans-serif;
+    font-size: 0.875rem;
+}
+
+.published{
+    position: relative;
+    right: 60px;
+    font-family: "Page", sans-serif;
+    font-size: 0.938rem;
+    font-weight: 500;
+}
+
+.maintext{
+    position: relative;
+    right: 15px;
+    font-family: "Page", sans-serif;
+    font-size: 1.313rem;
+    font-weight: 800;
+}
+
+.description{
+    position: relative;
+    border-radius: 5px;
+    font-family: "Page", sans-serif;
+    font-size: 0.813rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 50%);
+    text-align: left;
+    margin-left: 20px;
+    line-height: 20px;
+}
+
+.imgauthor{
+    width: 30px;
+    position: relative;
+    right: 125px;
+}
+
+.name{
+    font-size: 0.813rem;
+    font-weight: 800;
+    font-family: "Page", sans-serif;
+    position: relative;
+    bottom: 40px;
+    right: 60px;
+}
+
+.container:hover{
+    box-shadow: 12px 12px 0 0 black;
+}
+
+.maintext:hover{
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 315px;
+    }
+
+    .asset {
+        width: 90%;
+    }
+
+    .container,
+    .asset {
+        max-width: 90%;
+    }
+
+    .image,
+    .card-text,
+    .author {
+        display: block;
+        width: 100%;
+    }
+
+    .learning {
+        margin-left: -5px;
+        text-align: center;
+    }
+
+    .published {
+        margin-left: 30px;
+    }
+
+    .maintext{
+        margin-left: 10px;
+        font-size: 1.2rem;
+    }
+
+    .description{
+        margin-left: 15px;
+        font-size: 0.7rem;
+        line-height: 18px;
+    }
+
+    .imgauthor{
+        margin-left: 35px;
+    }
+
+    .name {
+        text-align: center;
+        margin-left: 25px;
+    }
+}
