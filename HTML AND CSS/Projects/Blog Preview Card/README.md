@@ -116,7 +116,7 @@ Users should be able to:
     src: url('assets/fonts/Figtree-VariableFont_wght.ttf');
 }
 ```
-I learned how to add media queries, and edit them according to the device specifications, and using @ fontface to add fonts locally.
+Learnt how to add media queries, and edit them according to the device specifications, and using @fontface to add fonts locally.
 
 
 ### Continued development
