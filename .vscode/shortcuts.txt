@@ -1,0 +1,10 @@
+Ctrl + b = Show / Hide the Sidebar
+Ctrl + ~ = Show / Hide the terminal 
+Ctrl + p = Opens search bar to search files
+Ctrl + Arrow (Up / Down) = Scrolls Up or Down with keyboard
+Ctrl + p, then @ = Navigate through symbols
+Ctrl + \ = Split the editor
+Ctrl + w = Close the Split editor
+Ctrl + enter = Create a new line even though you're already on a line
+Ctrl + Shift + l = Selects a word and replaces it
+Ctrl +  Shift + d = Selects a word line by line
