@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "StyleFont";
+    src: url("assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format('.ttf');
+}
+
+*{
+    font-family: "StyleFont", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 8%);
+    font-size: 14px;
+}
+
+.container{
+    background-color: hsl(0, 0%, 12%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 315px; 
+    height: 515px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.description{
+    margin-top: 70px;
+}
+
+.image{
+    position: relative;
+    top: 30px;
+    left: 130px;
+}
+
+img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+.imagetext{
+    text-align: center;
+    position: relative;
+    top: 45px;
+}
+
+.imagetext h1{
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    position: relative;
+    bottom: 65px;
+    font-size: 1.3rem;
+}
+
+.imagetext h2{
+    color: hsl(75, 94%, 57%);
+    position: relative;
+    bottom: 55px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.imagetext h3{
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    position: relative;
+    bottom: 25px;
+    font-size: 0.9rem;
+    word-spacing: 1px;
+}
+
+.links{
+    text-align: center;
+    margin-left: auto;
+    width: 270px;
+    margin-right: auto;
+}
+
+.links a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    width: 180px;
+    margin: 1px;
+    font-weight: 600;
+    font-size: 0.815rem;
+}
+
+.links li{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 20%);
+    padding: 10px 30px;
+    border-radius: 7px;
+    position: relative;
+    top: 30px;
+    margin: 15px;
+}
+
+.links li:hover{
+    background-color: hsl(75, 94%, 57%);
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+.links a:hover{
+    color: black;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 90%;
+        height: 500px;
+        max-width: 288px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .description {
+        margin-top: 70px;
+        width: 90%;
+    }
+
+    .image {
+        top: 10px;
+        left: calc(50% - 140px);
+        position: static;
+    }
+
+    .imagetext h1 {
+        font-size: 1.2rem;
+        bottom: 95px;
+        font-size: 1.3rem;
+    }
+
+    .imagetext h2 {
+        bottom: 85px;
+        font-size: 0.9rem;
+    }
+
+    .imagetext h3 {
+        bottom: 55px;
+        font-size: 0.9rem;
+    }
+
+    .links{
+        width: 100%;
+        position: static;
+    }
+
+    .links li {
+        top: 10px;
+    }
+
+    .links a{
+        text-align: center;
+        width: 100%;
+        font-size: 0.815rem;
+    }
+}
