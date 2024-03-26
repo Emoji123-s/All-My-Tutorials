@@ -14,7 +14,8 @@ character_type = input("Type of characters to be included (Numbers, Letters, Sym
 
 # Splitting the String 
 character_type_split = character_type.split(",")
-print(character_type_split)
 
 # Random
-random.shuffle(character_type_split)
+character_random= random.choice(character_type_split)
+character_sample = random.sample(character_type_split, length)
+character_print = print(f"{character_sample}")
