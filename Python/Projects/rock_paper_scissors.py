@@ -41,24 +41,52 @@ If user choice is two and computer choice is one, scissors will win against pape
 Trying in an if/else statement. The order matters when putting the conditions matter. Think through it
 
 if (computer_choice > user_choice):
-    print("You Lose")  = This covers cases 0 1, and 1 2
+    print("You Lose")  = This covers cases 0 1, and 1 2 - Done
 
 elif (user_choice > computer_choice):
-    print("You Win")  = This covers cases 1 0, and 2 1
+    print("You Win")  = This covers cases 1 0, and 2 1 - Done
 
 if (computer_choice == user_choice):
-    print("It's a draw")  = This covers cases 0 0, 1 1 and 1 2
+    print("It's a draw")  = This covers cases 0 0, 1 1 and 1 2 - Done
 
 if (user_choice == 0 and computer_choice == 2):
-    print("You Win")  = This covers cases 0 2
+    print("You Win")  = This covers cases 0 2 -Done
 
 if (user_choice == 2 and computer_choice == 0):
-    print("You Lose")  = This covers cases 2 0
+    print("You Lose")  = This covers cases 2 0 - Done
 
 else:
     print("Wrong Value, Try again)
 """
 
 # Message Prompt
-print("Rock, Paper, Scissors")
-print("Select a value ranging from 0 - 2. 0 = Rock, 1 = Paper, 2 = Scissors")
+print("Rock, Paper, Scissors Game")
+print("Choose a value ranging from 0 - 2. 0 = Rock, 1 = Paper, 2 = Scissors")
+
+# Import
+import random
+
+# User Input
+user_choice = int(input("Enter a value from 0 - 2 : "))
+computer_choice = random.randint(0, 2)
+
+print(f"Computer Choice = {computer_choice}")
+
+# Game Conditions
+
+
+# Same choice
+if computer_choice == user_choice:
+    print("It's a draw")
+
+# Player wins
+elif (user_choice == 0 and computer_choice == 2) or (user_choice == 2 and computer_choice == 1) or (user_choice == 1 and computer_choice == 0):
+    print("You Win")
+
+# Computer wins
+elif (computer_choice == 2 and user_choice == 0) or (computer_choice == 0 and user_choice == 1) or (computer_choice == 1 and user_choice == 2) or (computer_choice == 1 and user_choice == 0):
+    print("You Lose")
+
+# Invalid input
+elif user_choice not in range(3):
+    print("Not a valid input, try again")
