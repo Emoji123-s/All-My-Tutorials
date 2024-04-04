@@ -139,3 +139,7 @@ print(set13 <= set14)
 # Superset
 print(set14.issuperset(set15))
 print(set14 >= set14)
+
+# Del
+del set12 # the .clear operation clears the entire set and returns a null set, but the del function clears the set element and the set itself, like it never existed
+#print(set12)
