@@ -7,7 +7,7 @@ if condition1:
     if condition2:
         statement2
 
-Any number of nested if is possible. The indentation in python is key to identufy the level of nesting
+Any number of nested if is possible. The indentation in python is key to identify the level of nesting
 
 Nested If-Else
 It is considered if a complete if-else construct is within an if or an else block.
@@ -69,9 +69,9 @@ else:
 """
 
 """
-If a user enters 1, it should print One, if 2, it should print 2, if 3, should print 3, Like a number familiarizer
+If a user enters 1, it should print One, if 2, it should print 2, if 3, should print 3
 """
-print("Number Familiarizer")
+print("Number Familiarization")
 # Take number from the user
 number = int(input("Enter a number : "))
 
