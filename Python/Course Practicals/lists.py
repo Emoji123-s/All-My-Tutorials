@@ -1,5 +1,5 @@
 """
-A list is a collection of elements enclosed in square brackets, seperated by a comma. It is a dynamically sized array that doesn't need to be homogeneous. It is mutable, i.e, it can change or can be altered. It is a data structure that helps in storing and organizing data. It falls under Sequenced Datatypes, because it contains sequence of data. Examples are
+A list is a collection of elements enclosed in square brackets, separated by a comma. It is a dynamically sized array that doesn't need to be homogeneous. It is mutable, i.e, it can change or can be altered. It is a data structure that helps in storing and organizing data. It falls under Sequenced Datatypes, because it contains sequence of data. Examples are
 roll_number = [1, 2, 3, 4, 5] - List of Integers
 names = ["Divine", "Ariana", "Isaac"] - List of Strings
 mix_list = [1, "Divine", True, 10.10] - Mixed list containing integer, string, boolean and float
@@ -68,7 +68,7 @@ numbers[1:4] = [45, 46, 47] # This will change the values of the index stored at
 print(numbers)
 
 # Remove
-numbers.remove(45) # This removes the first occurence of the value passed to it. 
+numbers.remove(45) # This removes the first occurrence of the value passed to it. 
 print(numbers)
 
 # Pop
