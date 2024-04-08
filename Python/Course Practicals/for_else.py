@@ -14,7 +14,6 @@ we can use a for loop to traverse through the list
                 else:
                     print("Successfully completed!")
 """
-
 # Using tuples 
 tuple1 = (2, 50, 6, 34, 5, -1)
 for i in tuple1:

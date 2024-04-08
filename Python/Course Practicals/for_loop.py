@@ -12,8 +12,6 @@ using a for loop to traverse through the list
                         print(names)
 Here, the variable name "name" is set for each item in the variable sequence "names", and with the for loop, we can traverse through the list and print the names in that list. Here, all the names will be printed accordingly.
 """
-
-
 names = ["Divine", "Dracula", "Damien"]
 for i in names:
     print(i)

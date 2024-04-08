@@ -4,9 +4,9 @@ Who will pay the bill? Select a random name from a list of names and the person 
 import random
 
 # User Input
-names = input("Enter names seperated by a comma : ")
+names = input("Enter names separated by a comma : ")
 
-# Spliting the names 
+# Splitting the names 
 names_split = names.split(",") # This should turn it into a list
 print(names_split)
 
@@ -22,7 +22,7 @@ print(f"{name_random} will pay the bill :D")
 import random
 
 # User Input
-names = input("Enter names seperated by a comma: ")
+names = input("Enter names separated by a comma: ")
 
 # Splitting the names
 names_split = names.split(",")
@@ -31,7 +31,7 @@ names_split = names.split(",")
 name_length = len(names_split)
 
 # Let's assign an index value to the list
-name_random = random.randint(0, name_length - 1) # If the list is supposedly 10 names, the length of the list will be 10, but the index will count from zero(0) and stop at 9. So the namelength will be -1 to match the index
+name_random = random.randint(0, name_length - 1) # If the list is supposedly 10 names, the length of the list will be 10, but the index will count from zero(0) and stop at 9. So the name length will be -1 to match the index
 
 # To print using subscript
-print(f"{names_split[name_random]} will pay the bill") # From the split list, a random name will be chosen everytime using the indexed number
+print(f"{names_split[name_random]} will pay the bill") # From the split list, a random name will be chosen every time using the indexed number
