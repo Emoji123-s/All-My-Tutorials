@@ -130,23 +130,23 @@ footer h2 {
 @media only screen and (max-width: 768px) {
 
     .container {
-        border-radius: 0; /* Remove border-radius */
-        max-width: 100%; /* Fill the entire screen */
-        margin: 0; /* Remove margin */
+        border-radius: 0; 
+        max-width: 100%; 
+        margin: 0; 
     }
 
     img {
-        width: 100%; /* Make the image fill the width of the container */
-        height: auto; /* Automatically adjust height to maintain aspect ratio */
-        position: absolute; /* Position the image absolutely */
-        top: -20px; /* Align the top of the image to the top of the container */
-        left: 0; /* Align the left of the image to the left of the container */
-        border-radius: 0; /* Reset border-radius */
+        width: 100%; 
+        height: auto; 
+        position: absolute; 
+        top: -20px; 
+        left: 0; 
+        border-radius: 0; 
     }
 
     #recipe {
-        position: relative; /* Ensure normal document flow */
-        padding-top: 45vw; /* Push text below the image */
+        position: relative; 
+        padding-top: 45vw;
 
     }
 
@@ -228,4 +228,3 @@ footer h2 {
         font-size: 0.7rem;
     }
 }
-
