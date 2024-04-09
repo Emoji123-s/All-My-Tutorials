@@ -124,3 +124,108 @@ footer h2 {
     color: hsl(14, 45%, 36%);
     font-weight: 800;
 }
+
+/* Media Query for mobile view */
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        border-radius: 0; /* Remove border-radius */
+        max-width: 100%; /* Fill the entire screen */
+        margin: 0; /* Remove margin */
+    }
+
+    img {
+        width: 100%; /* Make the image fill the width of the container */
+        height: auto; /* Automatically adjust height to maintain aspect ratio */
+        position: absolute; /* Position the image absolutely */
+        top: -20px; /* Align the top of the image to the top of the container */
+        left: 0; /* Align the left of the image to the left of the container */
+        border-radius: 0; /* Reset border-radius */
+    }
+
+    #recipe {
+        position: relative; /* Ensure normal document flow */
+        padding-top: 45vw; /* Push text below the image */
+
+    }
+
+
+    #recipe h1 {
+        font-size: 1.1rem;
+    }
+
+    #recipe p {
+        font-size: 0.5rem;
+    }
+
+    #prep-time h2 {
+        font-size: 0.9rem;
+    }
+
+    #ingredients h2,
+    #instructions h2,
+    footer h2 {
+        font-size: 1rem;
+    }
+
+    #ingredients li,
+    #instructions li {
+        font-size: 0.5rem;
+    }
+}
+
+/* Media Query for tablet view */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #recipe h1 {
+        font-size: 1.2rem;
+    }
+
+    #recipe p {
+        font-size: 0.6rem;
+    }
+
+    #prep-time h2 {
+        font-size: 1rem;
+    }
+
+    #ingredients h2,
+    #instructions h2,
+    footer h2 {
+        font-size: 1.1rem;
+    }
+
+    #ingredients li,
+    #instructions li {
+        font-size: 0.6rem;
+    }
+}
+
+/* Media Query for desktop view */
+
+@media only screen and (min-width: 1024px) {
+    #recipe h1 {
+        font-size: 1.3rem;
+    }
+
+    #recipe p {
+        font-size: 0.7rem;
+    }
+
+    #prep-time h2 {
+        font-size: 1.1rem;
+    }
+
+    #ingredients h2,
+    #instructions h2,
+    footer h2 {
+        font-size: 1.2rem;
+    }
+
+    #ingredients li,
+    #instructions li {
+        font-size: 0.7rem;
+    }
+}
+
