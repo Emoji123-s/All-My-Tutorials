@@ -42,4 +42,20 @@ for i in range(amount_of_numbers):
     password += random.choice(numbers)
 
 # Printing the Password
-print(password)
+print(f"Unshuffled Password : {password}")
+
+# For Hard
+
+# Convert password to list and shuffle it
+password_list = list(password)
+random.shuffle(password_list)
+
+# Initialize an empty string to hold the shuffled password
+password_shuffled = ""
+
+# Concatenate each character from the shuffled list to form the shuffled password
+for i in password_list:
+    password_shuffled += i
+
+# Printing the Password
+print("Shuffled Password:", password_shuffled)
