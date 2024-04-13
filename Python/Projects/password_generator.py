@@ -58,4 +58,4 @@ for i in password_list:
     password_shuffled += i
 
 # Printing the Password
-print("Shuffled Password:", password_shuffled)
+print(f"Shuffled Password : {password_shuffled}")
