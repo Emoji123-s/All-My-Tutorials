@@ -41,6 +41,6 @@ filled = story.replace("[adjective1]", adjective1)\
               .replace("[verb2]", verb2)\
               .replace("[noun4]", noun4)
 # So cool, by the way..... :))
-# Now the user can see theur story, however they chose their parts of speech
+# Now the user can see their story, however they chose their parts of speech
 print("Here's your completed story :) \n")
 print(filled)

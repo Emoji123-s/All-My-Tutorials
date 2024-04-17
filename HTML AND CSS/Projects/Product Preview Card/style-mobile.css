@@ -2,110 +2,109 @@
     display: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px){
    body{
       background-color: hsl(30, 38%, 92%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
    }
 
-   .container {
+   .container{
       display: flex;
       flex-direction: column;
+      width: 300px;
+      height: 95%;
+      margin: 0 auto;
       border-radius: 10px;
-      width: 95%;
-      max-width: 560px;
-      margin: 5vw auto;
       background-color: hsl(0, 0%, 100%);
-      line-height: 6px;
       overflow: hidden;
    }
-   
-   .mobile-image {
-      margin-bottom: 10px;
+
+   .mobile-image{
       display: block;
-      width: 100%
+      width: 100%;
    }
 
    .mobile{
-      background-image: url("images/image-product-mobile.jpg");
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      width: 100%;
-   }
-   
-   .description {
-      padding: 0 20px;
-   }
-   
-   .imagetext {
-      text-align: left;
+      width: 300px;
    }
 
-   .imagetext h1{
+   .description{
+      width: 100%;
+      padding-bottom: 40px;
+   }
+
+   .imagetext h1 {
       font-family: "Montserrat", sans-serif;
-      font-size: 0.7rem;
+      font-size: 0.616rem;
       text-transform: uppercase;
       letter-spacing: 5px;
       font-weight: 600;
       color: hsl(228, 12%, 48%);
+      margin-bottom: 10px;
    }
 
-   .imagetext h2{
+  .imagetext h2 {
       font-family: "Fraunces", sans-serif;
       font-size: 1.7rem;
       line-height: 1;
       font-weight: 700;
+      margin-bottom: 10px;
    }
 
-
-   .imagetext .main-h3{
+   .imagetext .main-h3 {
       font-family: "Montserrat", sans-serif;
       color: hsl(228, 12%, 48%);
-      font-size: 0.850rem;
+      font-size: 0.9rem;
       font-weight: 500;
       line-height: 20px;
-  }
-   
-   .imagetext .price{
+      margin-bottom: 20px;
+   }
+
+   .imagetext .price {
       font-family: "Fraunces", sans-serif;
       font-size: 1.6rem;
       color: hsl(158, 36%, 37%);
       font-weight: 800;
    }
-   
-   .imagetext .strikethrough{
-      position: relative;
+
+   .imagetext .strikethrough {
+      position: absolute;
       left: 50%;
-      bottom: 30px;
+      bottom: 60px;
       font-size: 0.8rem;
       color:hsl(228, 12%, 48%);
       text-decoration: line-through;
       font-family: "Montserrat", sans-serif;
       font-weight: 600;
-  }
-   
+   }
+
    .links {
-      position: relative;
+      position: absolute;
+      left: 1px;
       bottom: 20px;
    }
 
    .links a {
       display: inline-block;
-      padding: 15px 85px;
+      padding: 13px 90px;
       border-radius: 5px;
       background-color: hsl(158, 36%, 37%);
       color: #fff;
       text-decoration: none;
       font-size: 12px;
-      font-weight: 700;
-      margin-left: 10px;
       font-family: "Montserrat", sans-serif;
       text-align: center;
-  }
-   
-   .cart {
+      font-weight: 700;
+   }
+
+   .links .cart {
       position: relative;
-      left: 90px;
-      top: 1px;
-      width: 12px;
+      top: 2px;
+      left: 35%;
+      width: 13px;
+      border-radius: 10px;
    }
 }
