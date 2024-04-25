@@ -59,26 +59,32 @@ you lose
 ==========
 """
 
-# Import libraries
 import random
 
 # Define the variable "words"
-
-words = ["apple", "banana", "carrot", "durian", "eggplant", "fig", "grape", "honeydew", "kiwi", "lemon", "mango", "orange", "peach", "pineapple", "pineapple", "pineapple", "pineapple", "pineapple", "pineapple", "pineapple", "pineapple", "pineapple", "pineapple", "pineapple", "pine"]
+words = ["apple", "banana", "carrot", "durian", "eggplant", "fig", "grape", "honeydew", "kiwi", "lemon", "mango", "orange", "peach", "pineapple"]
 
 # Generate a word
 word = random.choice(words)
 
+# Length of the word
+word_length = len(word)
+
 # Message prompt
 print("Let's Play Hangman!")
 print("Proper nouns, such as names, places, brands, or slangs are forbidden 😡")
-print(f"You have only {len(word)} lives to try and guess the word within {len(word)} attempts! Good luck!!")
+print(f"You have only 6 lives to try and guess the word within 6 attempts! Good luck!!")
 
-# initializing variables
-underscore = "_"
+# initializing underscore variable
+display = ""
+
+# Getting the underscore
+for letters in range(word_length):
+    display += "_"
 
 # Initial Hangman display
-hangman = """
+hangman_stages = [
+    """
   _______
  |       |
  |
@@ -86,18 +92,94 @@ hangman = """
  |
  |
 _|______
+""",
+    """
+  _______
+ |       |
+ |       O
+ |
+ |
+ |
+_|______
+""",
+    """
+  _______
+ |       |
+ |       O
+ |       |
+ |
+ |
+_|______
+""",
+    """
+  _______
+ |       |
+ |       O
+ |      /|
+ |
+ |
+_|______
+""",
+    """
+  _______
+ |       |
+ |       O
+ |      /|\\
+ |
+ |
+_|______
+""",
+    """
+  _______
+ |       |
+ |       O
+ |      /|\\
+ |      /
+ |
+_|______
+""",
+    """
+  _______
+ |       |
+ |       O
+ |      /|\\
+ |      / \\
+ |
+_|______
 """
-print(hangman)
+]
 
-# Length of the word
-length = len(word)
+# initializing variable to hold a boolean to flip, and the lives the user has
+game_over = False
+lives = 6
 
-# Represent the chosen word with underscore
-
-for i in range(length):
-    underscore = underscore.replace(word[i], "_")
-
-print(underscore)
-
-# User input
-guess = input("Guess a letter : ")
+# Using while loop
+while not game_over:
+    # Display Hangman figure
+    print("Hangman:")
+    print(hangman_stages[6 - lives])
+    print(display)
+    guess = input("Guess a letter: ")
+    # Checking if the guess is in the word
+    if guess in word:
+        print(f"You guessed {guess} that is present in the word.")
+        # Updating the display
+        for position in range(word_length):
+            letter = word[position]
+            if letter == guess:
+                display = display[:position] + letter + display[position + 1:]
+        print(f"You have {lives} lives left")
+    else:
+        print(f"You guessed {guess} that is not present in the word. So you lose a life")
+        lives -= 1
+        print(f"You have {lives} lives left")
+    # Checking if the user has lost
+    if lives == 0:
+        game_over = True
+        print("You lose")
+        print(f"The word was {word}")
+    # Checking if the user has won
+    if "_" not in display:
+        game_over = True
+        print("You win")
+        print(f"The word was {word}")
