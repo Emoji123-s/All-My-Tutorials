@@ -72,8 +72,7 @@ word_length = len(word)
 
 # Message prompt
 print("Let's Play Hangman!")
-print("Proper nouns, such as names, places, brands, or slangs are forbidden 😡")
-print(f"You have only 6 lives to try and guess the word within 6 attempts! Good luck!!")
+print(f"You have only 6 lives to try and guess the word! Good luck!!")
 
 # initializing underscore variable
 display = ""
