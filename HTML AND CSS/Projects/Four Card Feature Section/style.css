@@ -1,0 +1,68 @@
+html{
+    font-size: 15px;
+}
+
+body{
+    background-color: hsl(0, 0%, 98%);
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 100px;
+    justify-items: center;
+    align-items: center;
+}
+  
+.toptext {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.toptext h1{
+    font-size: 1.9rem;
+    font-weight: 300;
+    color: hsl(234, 12%, 34%);
+}
+
+span{
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+  
+.top-paragraph {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: hsl(229, 6%, 66%);
+}
+  
+.box {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #eee;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+  
+.box-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+    color: #333;
+}
+  
+.box-paragraph {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #666;
+}
+  
+.icon {
+    width: 50px;
+    height: 50px;
+}
