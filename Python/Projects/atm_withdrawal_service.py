@@ -22,6 +22,7 @@ while True:
     # Condition
     if (user_pin != pin):
         print("Access Denied")
+        break
 
 
     else:
