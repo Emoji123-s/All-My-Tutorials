@@ -20,7 +20,11 @@ while True:
     user_pin = (input("Enter your PIN : "))
 
     # Condition
-    if (user_pin == pin):
+    if (user_pin != pin):
+        print("Access Denied")
+
+
+    else:
         time.sleep(2)
         print("Select your Service from the list")
         print("1. Recharge")
@@ -142,5 +146,4 @@ while True:
                             break
 
 
-    else:
-        print("Access Denied")
+    
