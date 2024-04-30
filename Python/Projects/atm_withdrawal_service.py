@@ -14,15 +14,19 @@ print("Please Wait....")
 # Using the time import to wait for 4 seconds to mimic the loading time of the machine to process
 time.sleep(4)
 
+# Adding a condition to limit password input
+tries = 3
+
 # Using while loop to loop the program until the user selects "no" at the end of the transaction
 while True:
     # Request pin
     user_pin = (input("Enter your PIN : "))
 
     # Condition
-    if (user_pin != pin):
-        print("Access Denied")
-        break
+    while tries > 0:
+        if (user_pin != pin):
+            print("Access Denied")
+            break
 
 
     else:
