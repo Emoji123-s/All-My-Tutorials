@@ -1,6 +1,10 @@
-# Import library
+# Import libraries
 import time 
-from pin import pin
+import os
+
+# Getting the variable pin
+pin = os.getenv("PIN")
+
 
 # Assuming the user has slotted in their card. Display Message Prompt
 print("ATM Withdrawal.")
@@ -18,15 +22,16 @@ time.sleep(4)
 tries = 3
 
 # Using while loop to loop the program until the user selects "no" at the end of the transaction
-while True:
+while tries > 0:
     # Request pin
     user_pin = (input("Enter your PIN : "))
 
     # Condition
-    while tries > 0:
-        if (user_pin != pin):
-            print("Access Denied")
-            break
+    if (user_pin != pin):
+        print("Access Denied")
+        tries -= 1
+        print(f"You have {tries} tries left")
+
 
 
     else:
