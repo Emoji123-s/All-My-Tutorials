@@ -54,7 +54,8 @@ while tries > 0:
             print("2. Savings")
             print("3. Joint")
             print("4. Zero")
-            # If user choice is savings
+
+            # If user choice is current
             user_choice = int(input())
             if (user_choice == 2):
                 time.sleep(1)
@@ -75,7 +76,7 @@ while tries > 0:
                     print("7. 20000")
                     print("8. Other")
                     user_choice = int(input())
-                    if (user_choice == 6):
+                    if (user_choice == 1):
                         print("Cash is Counted")
                         print("Cash Retract is disabled")
                         time.sleep(5)
@@ -90,6 +91,104 @@ while tries > 0:
                         else:
                             print("Thank you for using our service!")
                             break
+                    
+                    elif (user_choice == 2):
+                        print("Cash is Counted")
+                        print("Cash Retract is disabled")
+                        time.sleep(5)
+                        print("Please take your cash")
+                        time.sleep(3)
+                        print("Do you want to perform another transaction? ")
+                        print("1. Yes")
+                        print("2. No")
+                        user_choice = int(input())
+                        if (user_choice == 1):
+                            continue
+                        else:
+                            print("Thank you for using our service!")
+                            break
+
+                    elif (user_choice == 3):
+                        print("Cash is Counted")
+                        print("Cash Retract is disabled")
+                        time.sleep(5)
+                        print("Please take your cash")
+                        time.sleep(3)
+                        print("Do you want to perform another transaction? ")
+                        print("1. Yes")
+                        print("2. No")
+                        user_choice = int(input())
+                        if (user_choice == 1):
+                            continue
+                        else:
+                            print("Thank you for using our service!")
+                            break
+
+                    elif (user_choice == 4):
+                        print("Cash is Counted")
+                        print("Cash Retract is disabled")
+                        time.sleep(5)
+                        print("Please take your cash")
+                        time.sleep(3)
+                        print("Do you want to perform another transaction? ")
+                        print("1. Yes")
+                        print("2. No")
+                        user_choice = int(input())
+                        if (user_choice == 1):
+                            continue
+                        else:
+                            print("Thank you for using our service!")
+                            break
+
+                    elif (user_choice == 5):
+                        print("Cash is Counted")
+                        print("Cash Retract is disabled")
+                        time.sleep(5)
+                        print("Please take your cash")
+                        time.sleep(3)
+                        print("Do you want to perform another transaction? ")
+                        print("1. Yes")
+                        print("2. No")
+                        user_choice = int(input())
+                        if (user_choice == 1):
+                            continue
+                        else:
+                            print("Thank you for using our service!")
+                            break
+
+
+                    elif (user_choice == 6):
+                        print("Cash is Counted")
+                        print("Cash Retract is disabled")
+                        time.sleep(5)
+                        print("Please take your cash")
+                        time.sleep(3)
+                        print("Do you want to perform another transaction? ")
+                        print("1. Yes")
+                        print("2. No")
+                        user_choice = int(input())
+                        if (user_choice == 1):
+                            continue
+                        else:
+                            print("Thank you for using our service!")
+                            break
+
+                    elif (user_choice == 7):
+                        print("Cash is Counted")
+                        print("Cash Retract is disabled")
+                        time.sleep(5)
+                        print("Please take your cash")
+                        time.sleep(3)
+                        print("Do you want to perform another transaction? ")
+                        print("1. Yes")
+                        print("2. No")
+                        user_choice = int(input())
+                        if (user_choice == 1):
+                            continue
+                        else:
+                            print("Thank you for using our service!")
+                            break
+
                     elif (user_choice == 8):
                         other_amount = int(input("Enter an amount : "))
                         time.sleep(1)
@@ -120,7 +219,89 @@ while tries > 0:
                     print("7. 20000")
                     print("8. Other")
                     user_choice = int(input())
-                    if (user_choice == 6):
+
+                    if (user_choice == 1):
+                        print("Cash is Counted")
+                        print("Cash Retract is disabled")
+                        time.sleep(5)
+                        print("Please take your cash")
+                        time.sleep(3)
+                        print("Do you want to perform another transaction? ")
+                        print("1. Yes")
+                        print("2. No")
+                        user_choice = int(input())
+                        if (user_choice == 1):
+                            continue
+                        else:
+                            print("Thank you for using our service!")
+                            break
+
+                    elif (user_choice == 2):
+                        print("Cash is Counted")
+                        print("Cash Retract is disabled")
+                        time.sleep(5)
+                        print("Please take your cash")
+                        time.sleep(3)
+                        print("Do you want to perform another transaction? ")
+                        print("1. Yes")
+                        print("2. No")
+                        user_choice = int(input())
+                        if (user_choice == 1):
+                            continue
+                        else:
+                            print("Thank you for using our service!")
+                            break
+
+                    elif (user_choice == 3):
+                        print("Cash is Counted")
+                        print("Cash Retract is disabled")
+                        time.sleep(5)
+                        print("Please take your cash")
+                        time.sleep(3)
+                        print("Do you want to perform another transaction? ")
+                        print("1. Yes")
+                        print("2. No")
+                        user_choice = int(input())
+                        if (user_choice == 1):
+                            continue
+                        else:
+                            print("Thank you for using our service!")
+                            break
+
+                    elif (user_choice == 4):
+                        print("Cash is Counted")
+                        print("Cash Retract is disabled")
+                        time.sleep(5)
+                        print("Please take your cash")
+                        time.sleep(3)
+                        print("Do you want to perform another transaction? ")
+                        print("1. Yes")
+                        print("2. No")
+                        user_choice = int(input())
+                        if (user_choice == 1):
+                            continue
+                        else:
+                            print("Thank you for using our service!")
+                            break
+
+                    elif (user_choice == 5):
+                        print("Cash is Counted")
+                        print("Cash Retract is disabled")
+                        time.sleep(5)
+                        print("Please take your cash")
+                        time.sleep(3)
+                        print("Do you want to perform another transaction? ")
+                        print("1. Yes")
+                        print("2. No")
+                        user_choice = int(input())
+                        if (user_choice == 1):
+                            continue
+                        else:
+                            print("Thank you for using our service!")
+                            break
+
+
+                    elif (user_choice == 6):
                         print("Cash is Counted")
                         time.sleep(1)
                         print("Cash Retract is disabled")
@@ -136,6 +317,24 @@ while tries > 0:
                         else:
                             print("Thank you for using our service!")
                             break
+
+                    elif (user_choice == 7):
+                        print("Cash is Counted")
+                        print("Cash Retract is disabled")
+                        time.sleep(5)
+                        print("Please take your cash")
+                        time.sleep(3)
+                        print("Do you want to perform another transaction? ")
+                        print("1. Yes")
+                        print("2. No")
+                        user_choice = int(input())
+                        if (user_choice == 1):
+                            continue
+                        else:
+                            print("Thank you for using our service!")
+                            break
+
+
                     elif (user_choice == 8):
                         other_amount = int(input("Enter an amount : "))
                         time.sleep(1)
@@ -155,5 +354,3 @@ while tries > 0:
                             print("Thank you for using our service!")
                             break
 
-
-    
