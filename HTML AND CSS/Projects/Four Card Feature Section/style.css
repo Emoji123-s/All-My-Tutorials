@@ -9,8 +9,8 @@ body{
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 75px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
     justify-items: center;
     align-items: center;
 }
@@ -37,32 +37,82 @@ span{
     color: hsl(229, 6%, 66%);
 }
   
-.box {
+.box1,
+.box2,
+.box3,
+.box4 {
     position: relative;
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    margin: 0 auto;
+    height: 180px;
     text-align: center;
-    border-radius: 10px;
-    background-color: #eee;
+    border-radius: 5px;
+    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.box1{
+    border-top: 4px solid hsl(180, 62%, 55%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 40%;
+    bottom: 0;
+}
+
+.box2{
+    border-top: 4px solid hsl(0, 78%, 62%);
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.box3{
+    border-top: 4px solid hsl(34, 97%, 64%);
+    position: absolute;
+    top: 62%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.box4{
+    border-top: 4px solid hsl(212, 86%, 64%);
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    right: 0;
+    bottom: 0;
+}
+
+.image{
+    width: 50px;
+    position: relative;
+    top: 15px;
+    left: 30%;
+}
+
+.image3{
+    width: 50px;
+    position: relative;
+    top: 15px;
+    left: 30%;
 }
   
 .box-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.8rem;
-    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 20px;
+    color:hsl(234, 12%, 34%);
 }
   
 .box-paragraph {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: #666;
-}
-  
-.icon {
-    width: 50px;
-    height: 50px;
+    font-size: 0.7rem;
+    text-align: left;
+    line-height: 1.7;
+    padding-left: 20px;
+    color: hsl(229, 6%, 66%);
 }
