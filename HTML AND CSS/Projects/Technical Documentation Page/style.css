@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+#sidebar{
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+    overflow-y: auto;
+}
+
+#sidebar h1{
+    text-align: center;
+    font-size: 1.7rem;
+    line-height: 70px;
+    background: #ffd700;
+    color: #042331;
+}
+
+nav ul a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 1.1rem;
+    color: white;
+    padding-left: 40px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+
+ul li:hover a{
+    padding-left: 50px;
+}
+
+main {
+    flex: 1;
+    padding-left: 270px;
+    padding-top: 20px;
+}
+
+#toc {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#toc h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+#toc ul {
+    padding-left: 0;
+}
+
+#toc ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+#toc ul li a {
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+#toc ul li a:hover {
+    background-color: #ddd;
+}
+
+pre {
+    background-color: #f4f4f4; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    padding: 10px; 
+    overflow-x: auto; 
+}
+
+code {
+    font-family: "Courier New", Courier, monospace; 
+    font-size: 14px;
+    color: #333; 
+    display: block; 
+    white-space: pre-wrap; 
+}
