@@ -152,3 +152,27 @@ nav ul li a:hover,
 
 
 /* Services Css */
+#services{
+    background-color: var(--bg-color);
+    color: white;
+    padding: 3.7rem;
+}
+
+#services h1{
+    font-size: 2.6875rem; /* 43px */
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.service-box{
+    background-color: var(--main-color);
+    height: 100%;
+}
