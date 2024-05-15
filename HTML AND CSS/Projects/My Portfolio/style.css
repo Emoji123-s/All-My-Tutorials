@@ -10,14 +10,15 @@ html {
 }
 
 :root{
-    --bg-color: #081b29;
-    --main-color: #00abf0;
-    --hover-color: #00ffee;
+    --bg-color: #d0dae3;
+    --main-color: #003a69;
+    --hover-color: #105fa1;
+    --bg-section-color: #00ffee;
 }
 
 body {
     background: var(--bg-color);
-    color: #fff;
+    color: black;
 }
 
 /* Nav and Home Css */
@@ -45,7 +46,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-weight: 600;
     align-items: center;
     justify-content: center;
@@ -150,11 +151,32 @@ nav ul li a:hover,
     transition: 0.2s;
 }
 
+.image-box{
+    border-radius: 50%;
+}
+
+.image-box img{
+    width: 32vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 50rem;
+    bottom: 180px;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.image-box img:hover{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 100px var(--main-color);
+}
+
 
 /* Services Css */
 #services{
-    background-color: var(--bg-color);
-    color: white;
+    background-color: var(--main-color);
+    color: black;
     padding: 3.7rem;
 }
 
@@ -163,6 +185,7 @@ nav ul li a:hover,
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
+    color: white;
     margin-bottom: 5rem;
 }
 
@@ -174,7 +197,7 @@ nav ul li a:hover,
 }
 
 .service-box{
-    background-color: var(--main-color);
+    background-color: var(--bg-color);
     height: 230px;
     border-radius: 1.5rem;
     border: 5px solid transparent;
@@ -187,4 +210,147 @@ nav ul li a:hover,
     background: white;
     border: 5px solid var(--main-color);
     transform: scale(1.03);
+}
+
+.service-box .service-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 2rem 2rem;
+}
+
+.service-info h4{
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 2;
+}
+
+.service-info p{
+    font-weight: 600;
+    font-size: 0.9rem;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+}
+
+/* Skills Css */
+
+#skills{
+    min-height: auto;
+    background-color: var(--bg-color);
+    padding: 3rem 3.7rem 7rem 3.7rem ;
+    
+}
+
+#skills .skills-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.skills-row .skills-column{
+    flex: 1 1 20rem;
+}
+
+#skills h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+#skills span{
+    color: var(--main-color)
+}
+
+.skills-column .title{
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+.skills-box .skills-content{
+    position: relative;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+}
+
+
+.skills-content .progress{
+    padding: 1rem 0;
+}
+
+.skills-content .progress h3{
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-content .progress h3 span{
+    color: var(--main-color);
+}
+
+.skills-content .progress .bar{
+    height: 2rem;
+    border-radius: .4rem;
+    border: .2rem solid var(--main-color);
+    padding: .5rem;
+    margin: 1rem auto;
+}
+
+.skills-content .progress .bar span{
+    display: block;
+    height: 100%;
+    border-radius: .2rem;
+    background: var(--hover-color);
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
+    width: 80%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
+    width: 5%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
+    width: 50%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span{
+    width: 8%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span{
+    width: 12%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span{
+    width: 80%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span{
+    width: 65%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span{
+    width: 50%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span{
+    width: 90%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(6) .bar span{
+    width: 30%;
 }
