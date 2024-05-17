@@ -88,7 +88,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15rem;
+    gap: 5rem;
 }
 
 .content{
@@ -441,14 +441,6 @@ section{
     width: 50%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span{
-    width: 8%;
-}
-
-.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span{
-    width: 12%;
-}
-
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
     width: 90%;
 }
@@ -465,10 +457,94 @@ section{
     width: 50%;
 }
 
-.skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span{
-    width: 90%;
+/* Portfolio Css */
+
+#portfolio{
+    min-height: auto;
+    background-color: var(--main-color);
+    padding: 3rem 3.7rem 7rem 3.7rem ;
 }
 
-.skills-column:nth-child(2) .skills-content .progress:nth-child(6) .bar span{
-    width: 30%;
+.main-text{
+    padding-top: 1rem;
+    margin-top: .5rem;
+}
+
+.main-text h2{
+    font-size: 2.5rem;
+    color: white;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+}
+
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 1rem 1rem 0;
+}
+
+.row img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.1), var(--hover-color));
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+
+.layer h5{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.layer p{
+    color: black;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.layer i{
+    color: black;
+    margin-top: 20px;
+    font-size: 20px;
+    background: white;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.row:hover img{
+    transform: scale(1.1);
+}
+
+.row:hover .layer{
+    height: 100%;
 }
