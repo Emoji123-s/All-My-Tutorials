@@ -4,13 +4,14 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    scroll-behavior: smooth;
 }
 
 html{
     font-size: 15px;
     font-family: "Poppins", sans-serif;
 }
-
+/* Navbar css */
 #sidebar{
     position: fixed;
     left: 0;
@@ -45,10 +46,12 @@ ul li:hover a{
     padding-left: 50px;
 }
 
+/* Main css */
 main {
     flex: 1;
     padding-left: 270px;
     padding-top: 20px;
+    margin: 0 1rem;
 }
 
 #toc {
@@ -99,4 +102,13 @@ code {
     color: #333; 
     display: block; 
     white-space: pre-wrap; 
+}
+
+section{
+    margin-bottom: 20px;
+}
+
+section h1,
+section h2{
+    margin-bottom: 10px;
 }
