@@ -3,7 +3,7 @@
 # It reads a line from input, converts it into a string (stripping a trailing newline), and returns that.
 # Syntax: input(prompt)
 # Example 1: Taking a simple input
-name = input("Enter your name: ")
+name = input("Enter your name: ") #saving the input in a variable
 print(name)
 
 # By default, the input function takes input as a string, and returns it as a string.

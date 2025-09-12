@@ -13,6 +13,11 @@ print("Hello", " ", "World") #adds space by default
 print("Hello", " World") #adds space by default
 print("Hello" + ", " + "World") #adding comma and space
 
+# We can also use a comma to concatenate strings
+print("Hello", ",", "World") #adds space by default
+print("Hello", ", ", "World") #adds space by default
+print("Hello" + ", " + "World") #adding comma and space
+
 # Exercise
 # Concatenate the following strings to form a sentence and print it
 # Using the first method
@@ -20,3 +25,6 @@ print("String Manipulation Exercise\nString Concatenation is done with the + ope
 
 # Using the second method
 print("String Manipulation Exercise" + "String Concatenation is done with the + operator" + "eg, print('Hello' + 'World')" + "New lines can be created with a backslash and n.")
+
+# Using the third method
+print("String Manipulation Exercise", "String Concatenation is done with the + operator", "eg, print('Hello' + 'World')", "New lines can be created with a backslash and n.")
