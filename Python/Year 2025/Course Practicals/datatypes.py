@@ -25,6 +25,9 @@ print(type(num2)) # prints <class 'float'>
 name = "Divine Providence"
 print(name)
 print(type(name)) # prints <class 'str'>
+# To print specific characters in a string, we use indexing, because strings are indexed, and indexing starts from 0. Each character has a specific index as it is stored as an array.
+print(name[0]) # prints D
+print(name[5]) # prints E
 
 # Boolean
 # Represents one of two values: True or False
