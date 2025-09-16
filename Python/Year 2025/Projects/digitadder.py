@@ -4,7 +4,7 @@ If the user puts in 12 as a digit, the output should be 3, basically adding the 
 """
 
 # Taking input from the user, and storig it in a variable for easier access
-user_input = (input("Enter a 2 digit number: "))
+user_input = input("Enter a 2 digit number: ")
 
 # Storing the individual value of each digit in separate variables
 num1 = int(user_input[0])
