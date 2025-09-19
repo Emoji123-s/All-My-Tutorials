@@ -13,7 +13,7 @@ Aritmetic Operators
 * = Times/Multiplication
 / = Division (Outputs in float)
 % = Modulus/Remainder
-// = Flow Division (changes from float to integer)
+// = Floor Division (changes from float to integer)
 ** = Power
 
 
