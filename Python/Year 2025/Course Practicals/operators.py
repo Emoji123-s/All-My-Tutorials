@@ -70,3 +70,29 @@ Doing 5 == a will give an error, because there is no container to compare 5 to.
 It will return a boolean value, either True or False, depending on the comparison.
 
 """
+
+"""
+Logical Operators
+They are used to combine conditional statements.
+AND
+                        Truth Table for AND
+                        True    True    True
+                        True    False   False
+                        False   True    False
+                        False   False   False
+OR
+                        Truth Table for OR
+                        True    True    True
+                        True    False   True
+                        False   True    True
+                        False   False   False
+NOT
+                        Truth Table for NOT
+                        True    False
+                        False   True    
+
+For example:
+print(5 > 2 and 5 < 10) # AND, both conditions must be true. If one is false, it will return False
+print(5 > 2 or 5 < 1) # OR, at least one condition must be true. If one is false, it will return True.
+print(not(5 > 2)) # NOT, reverses the result, in this case it will return False
+"""
