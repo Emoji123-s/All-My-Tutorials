@@ -96,3 +96,44 @@ print(5 > 2 and 5 < 10) # AND, both conditions must be true. If one is false, it
 print(5 > 2 or 5 < 1) # OR, at least one condition must be true. If one is false, it will return True.
 print(not(5 > 2)) # NOT, reverses the result, in this case it will return False
 """
+
+"""
+Bitwise Operators
+They are used to compare binary numbers. They include:
+& = AND
+| = OR
+^ = XOR
+~ = NOT
+<< = Zero fill left shift
+>> = Signed right shift
+
+For example:
+a = 5
+b = 4
+print(a & b) # AND, it will return 4, because 5 in binary is 101 and 4 is 100, and only the last digit is the same. When converting, if both digits are 1, it will return 1, otherwise it will return 0.
+
+print(a | b) # OR, it will return 5, because 5 in binary is 101 and 4 is 100, and only the last digit is the same. When converting, if either digit is 1, it will return 1, otherwise it will return 0.
+
+print(a ^ b) # XOR, it will return 1, because 5 in binary is 101 and 4 is 100, and only the last digit is different. When converting, if the digits are different, it will return 1, otherwise it will return 0.
+
+print(~a) # NOT, it will return -6, because it inverts all the bits and adds 1 to the result. If it is 0, it will return 1, and if it is 1, it will return 0. Now, we cannot store negative number, so we use two's complement to store negative numbers. To get the two's complement, we invert all the bits and add 1 to the result. Basically
+                                2's = 1's + 1( Two's complement is equal to one's complement plus one)
+How to calculate one's complement:
+                                5 = 0000 0101 (in binary)
+                                ~5 = 1111 1010 (in binary)
+To get two's complement, we add 1 to the result:
+                                ~5 = 1111 1010
+                                   +         1
+                                ------------
+                                -6 = 1111 1011 (in binary)
+So if we have, probably ~10, it will be -11
+If we have ~100, it will be -101. 
+
+print(a << 2) # Zero fill left shift, it will left shift the first operand with respect to the number of bits specified in the second operand. In this case, it will return 20, because 5 in binary is 101, and when we left shift it by 2 bits, we add zeros to the left. So we get 10100, which is 20 in decimal. It's basically multiplying the number by 2 for each shift to the left. So, 5 * 2 * 2 = 20. 
+if we have print(a << 3), it will return 40, because 5 * 2 * 2 * 2 = 40.
+if we have print(a << 4), it will return 80, because 5 * 2 * 2 * 2 * 2 = 80.
+if we have print(a << 5), it will return 160, because 5 * 2 * 2 * 2 * 2 * 2 = 160.
+
+print(a >> 2) # Signed right shift, it will right shift the first operand with respect to the number of bits specified in the second operand. In this case, it will return 1, because 5 in binary is 101, and when we right shift it by 2 bits, we remove the last two bits. So we get 1, which is 1 in decimal. It's basically dividing the number by 2 for each shift to the right. So, 5 / 2 / 2 = 1. 
+if we have print(a >> 3), it will return 0, because 5 / 2 / 2 / 2 = 0.
+"""
