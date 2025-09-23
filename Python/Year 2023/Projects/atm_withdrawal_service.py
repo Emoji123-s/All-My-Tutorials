@@ -3,6 +3,7 @@ import time
 import os
 
 # Getting the variable pin
+
 pin = os.getenv("PIN")
 
 
