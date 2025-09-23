@@ -161,3 +161,18 @@ is is used to check if the objects are the same, while == is used to check if th
 print(a == b) # True, because a and b have the same value
 print(a is b) # False, because a and b do not share the same memory location
 """
+
+"""
+Membership Operators
+They are used to check if a sequence is present in an object, or a character is present in a sequence. They basically check membership, hence the name Membership Operators. There are 2 types:
+in
+not in
+
+a = ["apple", "banana"]
+print("apple" in a) # True, because "apple" is in the list
+print("apple" not in a) # False, because "apple" is in the list
+
+c = "Hello World"
+print("H" in c) # True, because "H" is in the string
+print("h" in c) # False, because "h" is not in the string
+"""
