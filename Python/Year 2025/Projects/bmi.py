@@ -3,14 +3,14 @@
 # Example: weight = 70kg, height = 1.75m, BMI = 70/(1.75*1.75) = 22.86
 
 # Taking input from the user, and storing it in a variable for easier access
-weight = float(input("Enter your weight in kg: "))
+weight = int(input("Enter your weight in kg: "))
 height = float(input("Enter your height in meters: "))
 
 # Calculating BMI
 bmi = weight / (height * height)
 
 # Outputting the BMI to the user
-print("Your BMI is:", bmi)
+print("Your BMI is:", int(bmi))
 
 """
 Alternatively, you can use the exponentiation operator to calculate height squared
