@@ -137,3 +137,27 @@ if we have print(a << 5), it will return 160, because 5 * 2 * 2 * 2 * 2 * 2 = 16
 print(a >> 2) # Signed right shift, it will right shift the first operand with respect to the number of bits specified in the second operand. In this case, it will return 1, because 5 in binary is 101, and when we right shift it by 2 bits, we remove the last two bits. So we get 1, which is 1 in decimal. It's basically dividing the number by 2 for each shift to the right. So, 5 / 2 / 2 = 1. 
 if we have print(a >> 3), it will return 0, because 5 / 2 / 2 / 2 = 0.
 """
+
+"""
+Identity Operators
+They are used to compare objects if they are the same or not, as well as if they share the same memory location. There are 2 types:
+is
+is not
+
+For example:
+a = ["apple", "banana"]
+b = a
+print(a is b) # True, because a and b share the same memory location
+print(a is not b) # False, because a and b share the same memory location
+In identity operators, the memory manager reuses the same memory location for the same object to save memory. It doesn't create a new memory location for the same object. For example:
+a = ["apple", "banana"]
+b = ["apple", "banana"]
+print(a is b) # False, because a and b do not share the same memory location, even though they have the same content.
+To check the id of the object, we can use the id() function:
+print(id(a)) # This will print the memory location of a
+
+The difference between 'is' and '==':
+is is used to check if the objects are the same, while == is used to check if the objects have the same value.
+print(a == b) # True, because a and b have the same value
+print(a is b) # False, because a and b do not share the same memory location
+"""
