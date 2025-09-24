@@ -10,7 +10,7 @@ height = float(input("Enter your height in meters: "))
 bmi = weight / (height * height)
 
 # Outputting the BMI to the user
-print("Your BMI is:", int(bmi))
+print("Your BMI is:", round(bmi))
 
 """
 Alternatively, you can use the exponentiation operator to calculate height squared
